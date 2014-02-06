@@ -41,3 +41,21 @@ p {
 .menu_item {
 	list-style: none;
 }
+
+
+
+a:link, a:visited { 
+
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #91D8D5; 
+}
+
+a:hover, a:focus, a:active {
+
+  border-bottom: 0.15rem solid #CCCCCC; 
+  padding-bottom:0.4rem;
+
+}
+
+
