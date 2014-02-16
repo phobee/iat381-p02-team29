@@ -1,0 +1,30 @@
+
+[class*='col-']{
+	padding:0;
+	text-align: center;
+}
+
+
+#top .col-1of4{
+
+	max-width: 60%;
+	width: 15%;
+	float:right;
+	padding-top: 1.5rem;
+	
+}
+
+.grid:after{
+	content:"";
+	display:block;
+	clear:both;
+
+}
+
+*, *:after, *:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
