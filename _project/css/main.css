@@ -1,0 +1,89 @@
+/* IAT 381 P02 website's stylesheet*/
+
+/*Color Palette : #91D8D5 , #BFAC97, #FFFFFF, #CCCCCC, #3D3D3D */
+
+body {
+
+	font-family: 'Gafata', sans-serif;
+	font-size: 10px;
+	margin:0;
+}
+
+h1 {
+	font-size: 3rem;
+
+}
+
+h2 {
+
+	font-size: 1.5rem; 
+	color:#BFAC97; 
+}
+  
+
+p {
+	font-size: 0.8rem;
+
+}
+
+.categories {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.categories_item {
+	list-style: none;
+}
+
+
+.categories a:link, .categories a:visited { 
+
+	text-decoration: none; 
+	color: #000000; 
+}
+
+.categories a:hover, .categories a:focus, .categories a:active {
+
+  font-weight: bold; 
+  color: #BFAC97; 
+
+}
+
+/* header */
+
+#top {
+
+	font-size: 1rem;
+	line-height: 1rem;
+
+}
+
+.logo{
+	border-top: none;
+	text-align: center;
+
+}
+
+#top a:link, #top a:visited { 
+
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #91D8D5; 
+}
+
+#top a:hover, #top a:focus, #top a:active {
+
+  border-bottom: 0.15rem solid #CCCCCC; 
+  padding-bottom:0.4rem;
+
+}
+
+.image_banner{
+	height:12rem;
+	width:100%;
+	background-image: url('http://placehold.it/1920X200');
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
