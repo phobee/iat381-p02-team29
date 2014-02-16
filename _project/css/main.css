@@ -1,0 +1,61 @@
+/* IAT 381 P02 website's stylesheet*/
+
+/*Color Palette : #91D8D5 , #BFAC97, #FFFFFF, #CCCCCC, #3D3D3D */
+
+body {
+
+	font-family: 'Gafata', sans-serif;
+	font-size: 10px;
+}
+
+h1 {
+
+	font-size: 3rem;
+
+}
+
+h2 {
+
+	font-size: 1.5rem; 
+	color:#BFAC97; 
+}
+  
+section{
+
+	max-width: 80%;
+
+}
+
+p {
+	font-size: 0.8rem;
+
+}
+
+#nav_bar {
+
+	font-size: 1rem;
+	line-height: 2rem;
+
+}
+
+.menu_item {
+	list-style: none;
+}
+
+
+
+a:link, a:visited { 
+
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #91D8D5; 
+}
+
+a:hover, a:focus, a:active {
+
+  border-bottom: 0.15rem solid #CCCCCC; 
+  padding-bottom:0.4rem;
+
+}
+
+
