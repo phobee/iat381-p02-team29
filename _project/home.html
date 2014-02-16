@@ -5,7 +5,8 @@
 	<head>
 
 		<meta charset="utf-8">
-		<link href="main.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/grid.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
 
 
@@ -15,36 +16,63 @@
 
 	<body>
 
-		<h1>Together<h1>
 
-		<h2> Subtitle h2 </h2>
+		<header id="top"> <!-- top banner -->
 
+			<nav class ="grid">
+				<!-- beginning of the 4 navigation items -->
+				<div class="col-1of4">
+					<div id="home">
+						<a href="">Home</a>
+					</div>
+				</div>
 
-		<div id="top_banner">
-
-			<!-- Company logo here -->
-
-
-			<section id="nav_bar">
-				<ul class="menu_item">
-					<li><a href="">Home</a></li>
-					<li><a href="">Menu</a></li>
-					<li><a href="">Shopping Cart</a></li>
-					<li><a href="">Contact Us</a></li>
-				</ul>
-			</section> <!-- end of setion "menu" -->
-
-		</div> <!-- end of "top_banner" -->
+				<div class="col-1of4">
+					<div id="menu">
+						<a href="">Menu</a>
+					</div>
+				</div>
 
 
+				<div class="col-1of4">
+					<div id="contact_us">
+						<a href="">Contact Us</a>
+					</div>
+				</div>	
+
+				<div class="col-1of4">
+					<div id="shopping_cart">
+						<a href="">Shopping Cart</a>
+					</div>
+				</div>
+
+				<!-- end of the 4 navigation items -->
+				
+				<div class="logo">
+				<!-- Company logo here -->
+					<h1>Together</h1>
+				</div>							
+
+			</nav> <!--  end of nav grid class-->
+
+			<div class="image_banner">
+				<!-- full width image -->
+				<img/>
+
+			</div>
+
+		</header>
+
+
+		<!-- end of top -->
 			
-
+		<h2> Subtitle h2 </h2>
 		<div id="body_content">
 
-			<img src="http://placehold.it/1500X200"/>
+			
 			
 			<section class="categories">
-				<ul>
+				<ul class="categories_item">
 					<li><a href="">classics</a></li>
 					<li><a href="">floral</a></li>
 					<li><a href="">ribbon</a></li>

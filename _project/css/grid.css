@@ -1,0 +1,101 @@
+
+[class*='col-']{
+	padding:0;
+	text-align: center;
+}
+
+
+#top .col-1of4{
+
+	max-width: 60%;
+	width: 15%;
+	float:right;
+	padding-top: 1.5rem;
+	
+}
+
+.grid:after{
+	content:"";
+	display:block;
+	clear:both;
+
+}
+
+*, *:after, *:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*when the screen is smaller then 730px*/
+@media (max-width: 730px){
+	
+	/*changes the text navigation bar to icon full width navigation bar*/
+
+	#top .col-1of4{
+		max-width: 100%;
+		width: 25%;
+		padding:0;
+		
+	}
+
+	/*remove logo*/
+	.logo{
+
+		display:none;
+	}
+
+
+	/*overwrite font and hover properties from before, also set the height size since it is an icon*/
+	#top a:link, #top a:visited, #top a:hover, #top a:focus, #top a:active{ 
+
+		display: block;
+		height:4rem;
+		font-size: 0;
+		
+	}
+
+	/*change each text navigation to icon*/
+	nav #home{
+		border-left: white solid;
+		background-image: url('../img/home.png');
+		background-size: 5rem;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	nav #contact_us{
+		border-left: white solid;
+		background-image: url('../img/contactus.png');
+		background-size: 5rem;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	nav #shopping_cart{
+		
+		background-image: url('../img/shoppingcart.png');
+		background-size: 5rem;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	nav #menu{
+		border-left: white solid;
+		background: #91D8D5;
+		background-image: url('../img/menu.png');
+		background-size: 5rem;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	/*create an border-bottom to separate the navigation bar from the image below*/
+	nav{
+
+		border-bottom: gray solid 0.3rem;
+		background: #91D8D5;
+	}
+	
+
+}/*end of the settings when the screen is smaller than 730px*/

@@ -6,10 +6,10 @@ body {
 
 	font-family: 'Gafata', sans-serif;
 	font-size: 10px;
+	margin:0;
 }
 
 h1 {
-
 	font-size: 3rem;
 
 }
@@ -20,21 +20,9 @@ h2 {
 	color:#BFAC97; 
 }
   
-section{
-
-	max-width: 80%;
-
-}
 
 p {
 	font-size: 0.8rem;
-
-}
-
-#nav_bar {
-
-	font-size: 1rem;
-	line-height: 2rem;
 
 }
 
@@ -43,24 +31,8 @@ p {
 	line-height: 1.5rem;
 }
 
-.menu_item,.categories_item {
+.categories_item {
 	list-style: none;
-}
-
-
-
-.menu_item a:link, .menu_item a:visited { 
-
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #91D8D5; 
-}
-
-.menu_item a:hover, .menu_item a:focus, .menu_item a:active {
-
-  border-bottom: 0.15rem solid #CCCCCC; 
-  padding-bottom:0.4rem;
-
 }
 
 
@@ -77,5 +49,41 @@ p {
 
 }
 
+/* header */
 
+#top {
+
+	font-size: 1rem;
+	line-height: 1rem;
+
+}
+
+.logo{
+	border-top: none;
+	text-align: center;
+
+}
+
+#top a:link, #top a:visited { 
+
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #91D8D5; 
+}
+
+#top a:hover, #top a:focus, #top a:active {
+
+  border-bottom: 0.15rem solid #CCCCCC; 
+  padding-bottom:0.4rem;
+
+}
+
+.image_banner{
+	height:12rem;
+	width:100%;
+	background-image: url('http://placehold.it/1920X200');
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
 
