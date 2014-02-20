@@ -7,23 +7,25 @@ body {
 	font-family: 'Gafata', sans-serif;
 	font-size: 10px;
 	margin:0;
+	background:#FFEDD6;
 }
 
 h1 {
+	
 	font-size: 3rem;
-
 }
 
 h2 {
 
-	font-size: 1.5rem; 
+	font-size: 2rem; 
 	color:#BFAC97; 
+	margin:0;
 }
   
 
 p {
-	font-size: 0.8rem;
 
+	font-size: 0.8rem;
 }
 
 .categories {
@@ -49,7 +51,11 @@ p {
 
 }
 
-/* header */
+
+
+
+
+/* ------------- HEADER ---------------- */
 
 #top {
 
@@ -79,11 +85,35 @@ p {
 }
 
 .image_banner{
-	height:12rem;
+	height:25rem;
 	width:100%;
-	background-image: url('http://placehold.it/1920X200');
+	background-image: url('http://placehold.it/1920X400');
 	background-repeat: no-repeat;
 	background-position: center;
 
 }
 
+/*------------- END OF HEADER ------------- */
+
+
+
+/* ------------- BODY CONTENT WRAP ------------- */
+
+#about_us p{
+
+	font-size: 1.5rem;
+}
+#about_us {
+	text-align: center;
+	padding-top:2rem;
+}
+
+
+/*-------------  END OF BODY CONTENT WRAP ------------- */
+
+/*-------------  FOOTER -------------  */
+#footer{
+	text-align: center;
+}
+
+/*-------------  END OF FOOTER ------------- */
