@@ -111,6 +111,13 @@ p {
 
 /*-------------  END OF BODY CONTENT WRAP ------------- */
 
+
+/*----------------TINA just to show u where the last three column border is ----------- can be deleted later--------------------------------------------*/
+#feedback_content_wrap .col-1of3{  
+
+	border-left: solid;
+}
+
 /*-------------  FOOTER -------------  */
 #footer{
 	text-align: center;
