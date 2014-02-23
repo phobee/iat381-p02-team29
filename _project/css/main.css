@@ -6,56 +6,173 @@ body {
 
 	font-family: 'Gafata', sans-serif;
 	font-size: 10px;
+	margin:0;
+	background:#FFEDD6;
 }
 
 h1 {
-
+	
 	font-size: 3rem;
-
 }
 
 h2 {
 
-	font-size: 1.5rem; 
+	font-size: 2rem; 
 	color:#BFAC97; 
+	margin:0;
 }
   
-section{
-
-	max-width: 80%;
-
-}
 
 p {
+
 	font-size: 0.8rem;
-
 }
 
-#nav_bar {
-
+.categories {
 	font-size: 1rem;
-	line-height: 2rem;
-
+	line-height: 1.5rem;
 }
 
-.menu_item {
+.categories_item {
 	list-style: none;
 }
 
 
+.categories a:link, .categories a:visited { 
 
-a:link, a:visited { 
+	text-decoration: none; 
+	color: #000000; 
+}
+
+.categories a:hover, .categories a:focus, .categories a:active {
+
+  font-weight: bold; 
+  color: #BFAC97; 
+
+}
+
+
+
+
+
+/* ------------- HEADER ---------------- */
+
+#top {
+
+	font-size: 1rem;
+	line-height: 1rem;
+
+}
+
+.logo{
+	border-top: none;
+	text-align: center;
+
+}
+
+#top a:link, #top a:visited { 
 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #91D8D5; 
 }
 
-a:hover, a:focus, a:active {
+#top a:hover, #top a:focus, #top a:active {
 
   border-bottom: 0.15rem solid #CCCCCC; 
   padding-bottom:0.4rem;
 
 }
 
+.image_banner{
+	height:25rem;
+	width:100%;
+	background-image: url('http://placehold.it/1920X400');
+	background-repeat: no-repeat;
+	background-position: center;
 
+}
+
+/*------------- END OF HEADER ------------- */
+
+
+
+/* ------------- BODY CONTENT WRAP ------------- */
+
+#about_us p{
+
+	font-size: 1.5rem;
+}
+#about_us {
+
+	text-align: center;
+	
+}
+
+
+.category img, .product img {
+	display: block;
+	border: 1px solid black;
+
+	//width:100;
+	
+}
+
+.category, .product {
+	//display: block;
+	margin: 1.5rem 0;
+	float: left;
+	clear:both;
+	text-align: center;
+}
+
+.product_image {
+
+	border: 1px solid black;
+	margin: 1.5rem 0;
+}
+
+.product_info {
+	margin:2rem 1rem;
+}
+
+
+#company_feedback form label {
+	display: block;
+	margin-top: 0.5rem;
+}
+
+#company_feedback form textarea {
+	display: block;
+	width: 20rem;
+	height: 6rem;
+	//clear: right;
+}
+
+#submit {
+	margin-top: 0.7rem;
+}
+
+
+.col-1of4 img{
+
+	width: 100%;
+	height:auto;
+	
+}
+
+/*-------------  END OF BODY CONTENT WRAP ------------- */
+
+
+/*----------------TINA just to show u where the last three column border is ----------- can be deleted later--------------------------------------------*/
+#feedback_content_wrap .col-1of3{  
+
+	border-left: solid;
+}
+
+/*-------------  FOOTER -------------  */
+#footer{
+	text-align: center;
+}
+
+/*-------------  END OF FOOTER ------------- */
