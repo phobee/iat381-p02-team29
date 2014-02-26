@@ -2,13 +2,36 @@
 	float:left;
 }
 
+.top_grid{
+
+	width:50%;
+	float:right;
+	margin-right: 8%;
+}
+
+
+
 .nav_col{
 
-	max-width: 60%;
+	display: inline-block;
+	width: 25%;
+	float:left;
+
+
+	/*max-width: 60%;
 	width: 15%;
 	float:right;
-	padding-top: 1.5rem;
+	padding-top: 1.5rem;*/
 }
+
+
+.image_banner{
+
+	border:0;
+	padding:0;
+	clear:both;
+}
+
 
 .col-1of1 {
 
@@ -62,15 +85,10 @@
 	max-width: 80%;
 	margin: 0 auto;
 	background:rgba(255,255,255,0.7);
-	padding:5%;
-
+	padding:5% ;
 }
 
-.image_banner{
 
-	border:0;
-	padding:0;
-}
 
 
 
@@ -83,18 +101,6 @@
 
 /*when the screen is smaller then 800px*/
 @media (max-width: 960px){
-	
-
-	/*only for shopping cart columns*/
-
-
-	.one_item .col-1of4{
-
-		width: 25%;
-		
-		
-
-	}
 
 /*
 	.one_item .col-1of4 .shop_item_quantity{
@@ -105,76 +111,75 @@
 
 	/*end of only for shopping cart columns*/
 
-	/*changes the text navigation bar to icon full width navigation bar*/
-
-	.nav_col{
-		max-width: 100%;
-		width: 25%;
-		padding:0;
-		
-	}
-
-
-	.col-1of3 .related_products{
-		
-		width: 100%;
-
-	}
-
-	.col-1of3{
-
-		width: 50%;
-
-	}
-
-
-
-	.col-1of2{
-		width: 100%;
-
-	}
-
-
-	.col-2of4{
-		width: 50%;
-
-	}
-
-
-	.col-1of4{
-		width: 50%;
-
-	}
-
 	
 
 	/*remove logo*/
-	.logo{
+	#logo{
 
 		display:none;
 	}
 
+	#top{
+		line-height: 0rem;
+
+	}
+
+	/*changes the text navigation bar to icon full width navigation bar*/
+
+	.top_grid{
+
+		height:5rem; /* learn on web that adds height to the parent div */
+		overflow: auto; /* learn on web that adds height to the parent div */
+		width: 100%;
+		float:none;
+		margin: 0;
+		border-bottom: gray solid 0.3rem;	
+
+	}
+
+
+	/*create an border-bottom to separate the navigation bar from the image below*/
+	.nav_col{
+		
+		background: #91D8D5;
+		width: 25%;
+		display: inline-block;	
+		float:left;
+		border-right: white solid;
+		font-size: 0;
+	}
+
+	.nav_col:last-of-type
+	{
+		border-right: none;
+	}
+
+
+	#menu{
+	height: 5rem;
+	}
+
 
 	/*overwrite font and hover properties from before, also set the height size since it is an icon*/
-	#top a:link, #top a:visited, #top a:hover, #top a:focus, #top a:active{ 
+	.top_grid a:link, .top_grid a:visited, .top_grid a:hover, .top_grid a:focus, .top_grid a:active{ 
 
-		display: block;
-		height:4rem;
-		font-size: 0;
+		display: inline-block;
+		height:5rem;
+		width:100%;
 		
 	}
 
 	/*change each text navigation to icon*/
 	nav #home{
-		border-left: white solid;
 		background-image: url('../img/home.png');
 		background-size: 5rem;
 		background-repeat: no-repeat;
 		background-position: center;
+
+
 	}
 
 	nav #contact_us{
-		border-left: white solid;
 		background-image: url('../img/contactus.png');
 		background-size: 5rem;
 		background-repeat: no-repeat;
@@ -190,19 +195,11 @@
 	}
 
 	nav #menu{
-		border-left: white solid;
 		background: #91D8D5;
 		background-image: url('../img/menu.png');
 		background-size: 5rem;
 		background-repeat: no-repeat;
 		background-position: center;
-	}
-
-	/*create an border-bottom to separate the navigation bar from the image below*/
-	nav .nav_col{
-
-		border-bottom: gray solid 0.3rem;
-		background: #91D8D5;
 	}
 
 
@@ -213,6 +210,43 @@
 		
 	
 	}
+
+	.col-1of3 .related_products{
+		
+		width: 100%;
+
+	}
+
+	.col-1of3{
+
+		width: 50%;
+
+	}
+
+	.col-1of2{
+		width: 100%;
+
+	}
+
+	.col-2of4{
+		width: 50%;
+
+	}
+
+	.col-1of4{
+		width: 50%;
+
+	}
+
+	/*only for shopping cart columns*/
+	.one_item .col-1of4{
+
+		width: 25%;
+
+	}
+
+	
+	
 
 
 }/*end of the settings when the screen is smaller than 730px*/
