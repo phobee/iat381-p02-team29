@@ -16,12 +16,6 @@
 	display: inline-block;
 	width: 25%;
 	float:left;
-
-
-	/*max-width: 60%;
-	width: 15%;
-	float:right;
-	padding-top: 1.5rem;*/
 }
 
 
@@ -90,8 +84,6 @@
 
 
 
-
-
 *, *:after, *:before{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -156,7 +148,8 @@
 
 
 	#menu{
-	height: 5rem;
+
+		height: 5rem;
 	}
 
 
@@ -245,6 +238,8 @@
 
 	}
 
+
+
 	
 	
 
@@ -302,4 +297,13 @@
 		max-height: 100%;
 		margin: auto;
 	}
+
+
+	#footer{
+
+		max-width: 100%;
+		line-height: 1.5rem;
+		
+	}
+
 }/*end of the settings when the screen is smaller than 320px*/
