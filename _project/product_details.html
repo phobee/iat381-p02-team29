@@ -16,37 +16,42 @@
 
 	<body>
 
-		<header id="top"> <!-- top banner -->
+		<header id="top"> <!-- top-->
+				
+			<div id="logo">
+				<!-- Company logo here -->
+				<a href="home.html"></a>	
+			</div>	
 
-			<nav class ="top_grid">
+			<nav class="top_grid">
 
 				<!-- beginning of the 4 navigation items -->
 				<div class="nav_col">
 					<div id="home">
-						<a href="home.html">Home</a>
+						<a class="button"href="home.html">home</a>
 					</div>
 				</div>
 
 				<div class="nav_col">
 					<div id="menu">
-						<a href="product_menu.html">Menu</a>
-					</div>
+									<li><a href="">ribbons</a></li>
+					</div>	
 				</div>
 
 
 				<div class="nav_col">
 					<div id="contact_us">
-						<a href="contact_us.html">Contact Us</a>
+						<a class="button"href="contact_us.html">contact us</a>
 					</div>
 				</div>	
 
 				<div class="nav_col">
 					<div id="shopping_cart">
-						<a href="shopping_cart.html">Shopping Cart</a>
+						<a class="button"href="shopping_cart.html">shopping cart</a>
 					</div>
 				</div>
 
-				<!-- end of the 4 navigation items -->
+				<!-- end of the 4 navigation items -->							
 				
 				<div class="logo">
 				<!-- Company logo here -->
@@ -56,10 +61,11 @@
 			</nav> <!--  end of nav grid class-->
 
 			<div class="image_banner">
+				<div id="">
 				<!-- full width image -->
-				<img/>
-
+				</div>
 			</div>
+			
 
 		</header>
 
@@ -96,7 +102,9 @@
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra metus eu hendrerit sollicitudin. Donec dignissim, nibh a vehicula interdum, eros odio auctor lectus, nec dignissim purus lacus ac purus. Donec nulla mauris, scelerisque non nisl non, molestie ultrices ante. Duis lacinia dui dui, nec ultricies diam gravida in. Nunc pellentesque consequat tortor eu fermentum. Duis nec quam pretium, lobortis massa lacinia, facilisis magna. Sed non ultrices elit. Praesent magna purus, dignissim eget elit in, varius facilisis eros. Sed sed sapien metus.</p>
 						</div> <!-- ending product_info -->
-						
+
+						<form method="post" action="shopping_cart.html"><input type="submit" value="ADD TO CART" id="submit"></form
+						>
 					</div><!-- ending col 1 of 2 -->
 
 
@@ -113,37 +121,46 @@
 			
 			<nav class="grid">
 
-				<div class="col-1of3">
+				<div class="b-col-1of3">
 
 						<div class="related_products">
 
-							<p>
-								related products
-							</p>
+							</div>
+
+							<div class="b-col-1of2">
+
+								<a class="suggestion" href=""><img src='http://placehold.it/150X200' alt="logo" width="150" height="200"></a>	
+							</div>
+
+
+							<div class="b-col-1of2">
+								<a class="suggestion" href=""><img src='http://placehold.it/150X200' alt="logo" width="150" height="200"></a>	
+
+							</div>
 						</div> <!-- end of  related_products -->
 						
 				</div><!-- ending col 1 of 3 -->
 
 
-				<div class="col-1of3">
+				<div class="b-col-1of3">
 
 						<div class="product_feedback">
 
-							<p>
-								product_feedback
-							</p>
+						</form>
+
+				
 						</div> <!-- end of  product_feedback -->
 						
 				</div><!-- ending col 1 of 3 -->
 
 
-				<div class="col-1of3">
+						<div class="company_info">
 
-						<div class="product_feedback">
+						<p class="contact_info">
 
 							<p>
 								product_feedback
-							</p>
+						</p>
 						</div> <!-- end of  product_feedback -->
 						
 				</div><!-- ending col 1 of 3 -->
@@ -151,7 +168,7 @@
 
 			</nav> <!-- end of grid -->
 			
-		</div> <!-- end of "body_content_wrap" -->
+		</div> <!-- end of "feedback_content_wrap" -->
 
 		<div id="footer">
 			<p> &copy; 2014 Together. Website by Tina Lin &amp; Phoebe Ho  <p>
