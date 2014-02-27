@@ -16,52 +16,67 @@
 
 	<body>
 
-		<header id="top"> <!-- top banner -->
-
-			<nav class ="top_grid">
-				<!-- beginning of the 4 navigation items -->
-				<div class="nav_col">
-					<div id="home">
-						<a href="home.html">Home</a>
-					</div>
-				</div>
-
-				<div class="nav_col">
-					<div id="menu">
-						<a href="product_menu.html">Menu</a>
-					</div>
-				</div>
-
-
-				<div class="nav_col">
-					<div id="contact_us">
-						<a href="contact_us.html">Contact Us</a>
-					</div>
+		<header id="top"> <!-- top-->
+				
+				<div id="logo">
+					<!-- Company logo here -->
+					<a href="home.html"></a>	
 				</div>	
 
-				<div class="nav_col">
-					<div id="shopping_cart">
-						<a href="shopping_cart.html">Shopping Cart</a>
+				<nav class="top_grid">
+
+					<!-- beginning of the 4 navigation items -->
+					<div class="nav_col">
+						<div id="home">
+							<a class="button"href="home.html">home</a>
+						</div>
+					</div>
+
+					<div class="nav_col">
+						<div id="menu">
+							<ul>
+								<li><a class="button"href="category_menu.html">menu</a>
+							
+									<ul class="categories_item">
+										<li><a href="">new arrivals</a></li>
+										<li><a href="">classics</a></li>
+										<li><a href="">florals</a></li>
+										<li><a href="">ribbons</a></li>
+										<li><a href="">antique</a></li>
+										<li><a href="">polkadots</a></li>
+										<li><a href="">cupcakes</a></li>
+										<li><a href="">toppers</a></li>
+									</ul>
+
+								</li>
+							</ul>
+						</div>	
+					</div>
+
+
+					<div class="nav_col">
+						<div id="contact_us">
+							<a class="button"href="contact_us.html">contact us</a>
+						</div>
+					</div>	
+
+					<div class="nav_col">
+						<div id="shopping_cart">
+							<a class="button"href="shopping_cart.html">shopping cart</a>
+						</div>
+					</div>
+
+					<!-- end of the 4 navigation items -->							
+				</nav> <!--  end of nav grid class-->
+
+				<div class="image_banner">
+					<div id="shopping_cart_img">
+					<!-- full width image -->
 					</div>
 				</div>
-
-				<!-- end of the 4 navigation items -->
-				
-				<div class="logo">
-				<!-- Company logo here -->
-					<h1>Together</h1>
-				</div>							
-
-			</nav> <!--  end of nav grid class-->
-
-			<div class="image_banner">
-				<!-- full width image -->
-				<img/>
-
-			</div>
+			
 
 		</header>
-
 
 		<!-- end of top -->
 			
@@ -75,13 +90,8 @@
 
 					<div class="col-1of4">
 
-
-							<p>
-								image
-							</p>
 							<img src="http://placehold.it/400X400" width="200" height="200"/>
 						
-							
 					
 					</div><!-- ending col 1 of 4 -->
 
@@ -121,18 +131,11 @@
 
 				<div class="one_item">
 
-					
-
-
-
 
 					<div class="col-1of4">
 
 						<div class="shop_item_img">
 
-							<p>
-								image
-							</p>
 
 							<img src="http://placehold.it/400X400" width="200" height="200"/>
 						</div> <!-- shop_item_img -->
@@ -171,12 +174,62 @@
 				</div> <!-- end of one item-->
 
 
+				<div class="one_item">
 
-				<div class="col-1of1">
 
-					<div id="total_price">
+					<div class="col-1of4">
+
+						<div class="shop_item_img">
+							<img src="http://placehold.it/400X400" width="200" height="200"/>
+						</div> <!-- shop_item_img -->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+
+
+					<div class="col-2of4">
+
+						<div class="shop_item_info">
+
+							<p>
+								info
+							</p>
+						</div> <!-- shop_item_info -->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+
+
+					<div class="col-1of4">
+
+						<div class="shop_item_quantity">
+
+							<p>
+								quantity & price
+							</p>
+						</div> <!-- shop_item_quantity -->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+				</div> <!-- end of one item-->
+
+				<div id="total_price">
+					<div class="col-1of4">
+
 
 						<p>Total : </p>
+						
+					</div>
+
+				</div>
+
+				<div id="make_payment">
+					<div class="col-1of4">
+
+						<form action="payment.html"><input type="submit" value="PROCEED TO CHECKOUT"></form> 
 						
 					</div>
 
