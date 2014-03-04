@@ -5,6 +5,7 @@
 	<head>
 
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
@@ -19,7 +20,7 @@
 				
 				<div id="logo">
 					<!-- Company logo here -->
-					<a href="home.html"></a>	
+					<a href="home.html"><img src="img/logo.png" alt="logo"></a>	
 				</div>	
 
 				<nav class="top_grid">
@@ -27,24 +28,24 @@
 					<!-- beginning of the 4 navigation items -->
 					<div class="nav_col">
 						<div id="home">
-							<a class="button"href="home.html">home</a>
+							<a class="button" href="home.html">home</a>
 						</div>
 					</div>
 
 					<div class="nav_col">
 						<div id="menu">
 							<ul>
-								<li><a class="button"href="category_menu.html">menu</a>
+								<li><a class="button" href="category_menu.html">menu</a>
 							
 									<ul class="categories_item">
-										<li><a href="">new arrivals</a></li>
-										<li><a href="">classics</a></li>
-										<li><a href="">florals</a></li>
-										<li><a href="">ribbons</a></li>
-										<li><a href="">antique</a></li>
-										<li><a href="">polkadots</a></li>
-										<li><a href="">cupcakes</a></li>
-										<li><a href="">toppers</a></li>
+										<li><a href="product_menu.html">new arrivals</a></li>
+										<li><a href="product_menu.html">classics</a></li>
+										<li><a href="product_menu.html">florals</a></li>
+										<li><a href="product_menu.html">ribbons</a></li>
+										<li><a href="product_menu.html">antique</a></li>
+										<li><a href="product_menu.html">polkadots</a></li>
+										<li><a href="product_menu.html">cupcakes</a></li>
+										<li><a href="product_menu.html">toppers</a></li>
 									</ul>
 
 								</li>
@@ -55,13 +56,13 @@
 
 					<div class="nav_col">
 						<div id="contact_us">
-							<a class="button"href="contact_us.html">contact us</a>
+							<a class="button" href="contact_us.html">contact us</a>
 						</div>
 					</div>	
 
 					<div class="nav_col">
 						<div id="shopping_cart">
-							<a class="button"href="shopping_cart.html">shopping cart</a>
+							<a class="button" href="shopping_cart.html">shopping cart</a>
 						</div>
 					</div>
 
@@ -82,11 +83,80 @@
 			
 			<nav class="grid">
 
+
+				<div class="col-1of1">
+
+					<div id="purchase">
+
+						<h2>PURCHASING ITEMS</h2>
+						<div class="one_item">
+
+					<div class="col-1of4">
+
+							<img src="http://placehold.it/400X400" width="200" height="200"/>
+						
+					
+					</div><!-- ending col 1 of 4 -->
+
+
+					<div class="col-2of4">
+
+						<div class="shop_item_info">
+
+							<p>
+								info
+							</p>
+						</div> <!-- shop_item_info -->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+
+
+					<div class="col-1of4">
+
+						<div class="shop_item_quantity">
+
+							<p>
+								quantity & price
+							</p>
+						</div> <!-- shop_item_quantity -->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+				</div> <!-- end of one item-->
+
+					</div> <!-- ending about us -->
+						
+
+				</div><!-- ending col 1 of 1 -->
+
+
 				<div class="col-1of2">
 
-					<div id="payment">
+					<div id="company_feedback">
 
-						<h2>PAYMENT DEATILS</h2>	
+						<h2>YOUR DEATILS</h2>	
+
+						<form method="post" action="home.html" id="your_details">
+
+							<label for="form-name">Bride's Name:</label>
+						    <input type="text" id="form-name" name="form-name" placeholder="Jane Doe">
+
+						    <label for="form-subject">Broom's Name:</label>
+						    <input type="text" id="form-subject" name="form-subject" placeholder="Danny Blur">
+
+						    <label for="form-subject">Wedding date &amp; time of delivery:</label>
+						    <input type="text" id="form-subject" name="form-subject" placeholder="02/29/2013 8:00p.m">
+
+						    <label for="form-subject">Address:</label>
+						    <input type="text" id="form-subject" name="form-subject" placeholder="8888 University Dr,Burnaby, V5A 1S6">
+						      
+						    <label for="form-comment">Additional Information:</label>
+						    <textarea id="form-comment" name="form-comment" placeholder="Please place additional information here"></textarea>
+
+						</form>
 
 					</div> <!-- ending company info -->
 						
@@ -96,25 +166,24 @@
 
 					<div id="company_feedback">
 
-						<h2>BILLING INFORMATION</h2>
-						
+						<h2>CARD INFORMATION</h2>
+					
+
+							<label for="form-name">Card Number:</label>
+						    <input type="text" id="form-name" name="form-name" placeholder="4300 2560 3450 2200">
+
+						    <label for="form-name">Security Code:</label><input type="password" name="pwd" placeholder="***"><br>
+
+						    <input type="radio" name="card" value="visa">VISA 
+							<input type="radio" name="card" value="master">Mastercard<br>
+
+							<label for="form-name">Date od Expiry:</label><input type="text" name="date" placeholder="02/19">
+
+							<form method="post" action="shopping_cart.html" id="comments">
+						   <input type="submit" value="RETURN TO SHOPPING CART">
+						  </form>
+
 						<form method="post" action="home.html" id="comments">
-
-							<label for="form-name">Name:</label>
-						    <input type="text" id="form-name" name="form-name" placeholder="Jane Doe">
-
-						    <label for="form-subject">Subject:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="A title for your comment">
-
-						    <label for="form-subject">Phone:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="(xxx) xxx-xxxx">
-
-						    <label for="form-subject">Email:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="123@gmail.com">
-						      
-						    <label for="form-comment">Comment:</label>
-						    <textarea id="form-comment" name="form-comment" placeholder="Please place comment here"></textarea>
-
 						   <input type="submit" value="CONFIRM PAYMENT">
 
 						</form>

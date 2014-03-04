@@ -6,8 +6,10 @@ body {
 
 	font-family: 'Gafata', sans-serif;
 	font-size: 1rem;
-	background:#FFEDD6;
+	background-image: url('../img/bg.png');
+	background-size: 100%; 
 	margin: 0;
+
 }
 
 h1 {
@@ -33,42 +35,75 @@ p {
 
 	height:20rem;
 	width:40%;
-	background-image: url('../img/logo.png');
-	background-repeat: no-repeat;
-	background-size: 60%;
-	background-position: center;
 	position: absolute;
+	text-align: center;
 
 }
 
-#logo a:link{
+#logo img{
 
-	height:20rem;
-	width:40%;
+	height:auto;
+	width:60%;
+	padding-top:2rem;
+
 }
 
 .top_grid {
 
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 3rem;
 	margin-top:6rem;
-	text-align: left;
+	text-align: center;
 
 }
 
-#top a:link, #top a:visited { 
+
+
+.button:link, .button:visited { 
 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #91D8D5; 
+	color: #91D8D5;
+	background-color: rgba(144,216,213,0.1);
+	border-radius: 0.3rem;
+	border:white double 0.3rem;
 
 }
 
-#top a:hover, #top a:focus, #top a:active {
+.nav_col:hover,.nav_col:focus,.nav_col:active {
 
-  border-bottom: 0.15rem solid #CCCCCC; 
-  padding-bottom:0.4rem;
+  	background-color: rgba(191,172,151,0.3);
+	border-radius: 0.3rem;
+	color:#FFFFFF;
+	
+}
 
+.button:hover, .button:focus, .button:active { 
+
+	color:#FFFFFF;
+	font-weight: bolder; 
+}
+
+#menu{
+
+	height: 3.5rem;
+}
+
+#menu li{
+	list-style: none;
+}
+
+#menu ul{
+	margin:0;
+	padding:0;
+}
+
+nav ul ul{
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
 }
 
 
@@ -76,54 +111,82 @@ p {
 
 	list-style: none;
 	line-height: 2rem;
-	padding-left: 2rem;
+	font-size: 90%;
 
+}
+
+.categories_item li a, .button{
+
+	display: block;
+	width:100%;
+	
 }
 
 .categories_item{
 	padding:0;
 	margin:0;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(209,237,233,0.9);
+	border-radius: 0.2rem;
+	
 }
 
-
-/*.categories_item a:link, .categories_item a:visited { 
+.categories_item a:link, .categories_item a:visited { 
 	
 	text-decoration: none; 
-	color: #91D8D5; 
+	color: #BFAC97; 
 
 }
 
 .categories_item a:hover, .categories_item a:focus, .categories_item a:active {
 
-	color: #BFAC97; 
 	font-weight: bold; 
-	border-bottom: 0; 
-  	padding-bottom:0;
+	background-color:rgba(255,255,255,0.8);
 
-}*/
-
-#menu{
-	height: 1.5rem;
 }
+
+
 
 .image_banner{
 
-	height:25rem;
+	height:28rem;
 	width:100%;
-	background-image: url('http://placehold.it/1920X400');
+	background-image: url('../img/home_banner.jpg');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 20% 15%;
+	background-size: 1920px;
 
 }
 
-.general_products
-{
-	height:25rem;
+#home_banner{
+
+	height:28rem;
 	width:100%;
-	background-image: url('http://placehold.it/1920X500');
+	background-image: url('../img/home_banner.jpg');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 20% 15%;
+	background-size: 1920px;
+
+}
+
+#floral_banner
+{
+	height:28rem;
+	width:100%;
+	background-image: url('../img/floral_banner.jpg');
+	background-repeat: no-repeat;
+	background-position: 80% 12%;
+	background-size: 1920px;
+}
+
+
+#contact_banner
+{
+	height:28rem;
+	width:100%;
+	background-image: url('../img/home_banner.jpg');
+	background-repeat: no-repeat;
+	background-position: 20% 15%;
+	background-size: 1920px;
 }
 
 /*------------- END OF HEADER ------------- */
@@ -151,9 +214,18 @@ p {
 	margin:0;
 }
 
+#company_info img{
+
+	margin: 2.7rem 0;
+	height:auto;
+	max-width: 90%;
+	
+}
+
 #company_feedback form label {
 	display: block;
 	margin: 0.5rem 0;
+	/*ask y display block doesnt work*/
 }
 
 #company_feedback form label:first-of-type{
@@ -161,34 +233,121 @@ p {
 	margin-top:0;
 }
 
-input[type=text]{
-	width:23rem;
+#company_feedback input[type=text]{
+	width:22.5rem;
 	height:2rem;
 	border-radius: 0.3rem;
+	font-family: 'Gafata', sans-serif;
+	font-size: 1rem;
 }
 
 
 input[type=submit]{
 
-	background-color: #BFAC97;
+	background-color: rgba(191,172,151,0.8);
 	width: 10rem;
 	height:2rem;
 	border-radius: 0.3rem;
 	margin-top: 0.7rem;
+	font-family: 'Gafata', sans-serif;
+	font-size: 1rem;
 	
 }
 
 #company_feedback form textarea {
 	display: block;
-	width: 23rem;
+	width: 22.5rem;
 	height: 8rem;
 	clear: right;
 	border-radius: 0.3rem;
+	font-family: 'Gafata', sans-serif;
+	font-size: 1rem;
 }
 
 
 /* shopping cart */
 
+.one_item{
+	margin: 1rem 0;
+	height:auto;
+	overflow: auto;
+}
+
+.col-1of4 img{
+	width: 100%;
+	height:auto;
+	padding-right: 2rem;	
+}
+
+#total_price .col-1of4, #make_payment .col-1of4{
+
+	float:right;
+	clear:both;
+}
+
+#make_payment input[type=submit]{
+
+	background-color: #BFAC97;
+	width: 100%;
+	height:3rem;
+	border-radius: 0.3rem;
+	margin-top: 0.7rem;
+	font-family: 'Gafata', sans-serif;
+	font-size: 1rem;
+
+	
+}
+/*product menu*/
+
+#category {
+
+	display:block;
+	width:100%;
+	clear:both;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.category{
+	display: block;
+	padding: 5%;
+	float: left;
+	clear:both;
+	text-align: center;
+	height: auto;
+	overflow: auto;
+
+}
+
+.category a:link, .category a:visited { 
+
+	font-weight: bold; 
+	font-size: 1.5rem;
+	text-decoration: none; 
+	color: #BFAC97; 
+
+}
+
+.category img{
+
+	display:block;
+	width: 90%;
+	height:auto;
+	margin: auto;
+	padding:0 0 1rem 0;	
+}
+
+.category:hover, .category:focus, .category:active {
+
+	background-color: rgba(191,172,151,0.1);
+	border-radius: 1rem;
+	
+}
+
+.category_wrap .col-1of4{
+	padding: 0 0 3rem 0;
+}
+/*product details*/
 .product_image {
 
 	border: 1px solid black;
@@ -199,40 +358,73 @@ input[type=submit]{
 	margin:2rem 1rem;
 }
 
-.col-1of4 img{
 
-	width: 100%;
+.suggestion img{
+
+	margin: 1rem;
 	height:auto;
+	overflow: auto;
+	max-width: 90%;
 	
 }
 
-/**/
-.category img, .product img {
+.b-col-1of2, .b-col-1of3{
 
-	display: block;
-	border: 1px solid black;
-
-	width:100%;
-	
-}
-
-.category, .product {
-	display: block;
-	margin: 1.5rem 0;
-	float: left;
-	clear:both;
 	text-align: center;
 }
 
+
+.product_feedback form label {
+	display: block;
+	margin: 0.5rem 0;
+	text-align: left;
+}
+
+.product_feedback form label:first-of-type{
+	
+	margin-top:0;
+}
+
+.product_feedback input[type=text]{
+	width:18rem;
+	height:2rem;
+	border-radius: 0.3rem;
+	font-family: 'Gafata', sans-serif;
+	font-size: 1rem;
+}
+
+
+.product_feedback form textarea {
+	display: block;
+	width: 18rem;
+	height: 8rem;
+	clear: right;
+	border-radius: 0.3rem;
+	font-family: 'Gafata', sans-serif;
+	font-size: 1rem;
+	margin:auto;
+}
 
 
 /*-------------  END OF BODY CONTENT WRAP ------------- */
 
 
 /*----------------TINA just to show u where the last three column border is ----------- can be deleted later--------------------------------------------*/
-#feedback_content_wrap .col-1of3{  
+.b-col-1of3, .b-col-1of1{ 
 
-	border-left: solid;
+	margin: 3rem 0; 
+	border-right: 0.2rem double rgba(191,172,151,0.4); 
+}
+
+.b-col-1of3:first-of-type{ 
+
+	margin: 0; 
+	
+}
+
+.b-col-1of3:last-of-type{
+
+	border-right: none; 
 }
 
 /*-------------  FOOTER -------------  */
@@ -242,11 +434,17 @@ input[type=submit]{
 
 	overflow:hidden;
 	text-align: center;
-	max-width: 80%;
+	max-width: 100%;
 	margin: 0 auto;
-	line-height: 1.5rem;
-	background-color: #BFAC97;
+	line-height: 0.8rem;
+	background-color: rgba(191,172,151,0.5);
+
 }
+
+#footer p{
+	font-size: 0.8rem;
+}
+
 
 	
 

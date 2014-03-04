@@ -5,6 +5,7 @@
 	<head>
 
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
@@ -16,54 +17,66 @@
 
 	<body>
 
-		<header id="top"> <!-- top-->
+<header id="top"> <!-- top-->
 				
 			<div id="logo">
-				<!-- Company logo here -->
-				<a href="home.html"></a>	
+				<!-- Company logo here --> 
+				<a href="home.html"><img src="img/logo.png" alt="logo"></a>	
 			</div>	
 
 			<nav class="top_grid">
+
 				<!-- beginning of the 4 navigation items -->
 				<div class="nav_col">
 					<div id="home">
-						<a class="button"href="home.html">home</a>
+						<a class="button" href="home.html">home</a>
 					</div>
 				</div>
 
 				<div class="nav_col">
 					<div id="menu">
-									<li><a href="">ribbons</a></li>
+						<ul>
+							<li><a class="button" href="category_menu.html">menu</a>
+						
+								<ul class="categories_item">
+									<li><a href="product_menu.html">new arrivals</a></li>
+									<li><a href="product_menu.html">classics</a></li>
+									<li><a href="product_menu.html">florals</a></li>
+									<li><a href="product_menu.html">ribbons</a></li>
+									<li><a href="product_menu.html">antique</a></li>
+									<li><a href="product_menu.html">polkadots</a></li>
+									<li><a href="product_menu.html">cupcakes</a></li>
+									<li><a href="product_menu.html">toppers</a></li>
+								</ul>
+
+							</li>
+						</ul>
 					</div>	
 				</div>
 
 
 				<div class="nav_col">
 					<div id="contact_us">
-						<a class="button"href="contact_us.html">contact us</a>
+						<a class="button" href="contact_us.html">contact us</a>
 					</div>
 				</div>	
 
 				<div class="nav_col">
 					<div id="shopping_cart">
-						<a class="button"href="shopping_cart.html">shopping cart</a>
+						<a class="button" href="shopping_cart.html">shopping cart</a>
 					</div>
 				</div>
 
 				<!-- end of the 4 navigation items -->							
-				
-				<div class="logo">
-				<!-- Company logo here -->
-					<h1>Together</h1>
-				</div>							
-
 			</nav> <!--  end of nav grid class-->
 
-			<div class="image_banner">
+				<div class="image_banner">
+				<div id="floral_banner">
 				<!-- full width image -->
 				</div>
-
 			</div>
+			
+			
 
 		</header>
 
@@ -71,20 +84,22 @@
 		<!-- end of top -->
 			
 		<div id="body_content_wrap">
+
+			<h2 id="category">FLORALS</h2>
 			
 			<nav class="grid">
+				<div class="category_wrap">
 
-					
 
 					<div class="col-1of4">
 
 						<div class="category">
 
-							<a href="product_details.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake0.png" width="150" height="200">
 							Gift Box Cake</a>
-
-						</div> <!-- category_new -->
-						
+						</div> <!-- category_floral-->
+							
+					
 					</div><!-- ending col 1 of 4 -->
 
 
@@ -92,7 +107,7 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake1.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_classics -->
 
@@ -100,12 +115,11 @@
 					</div><!-- ending col 1 of 4 -->
 
 
-
 					<div class="col-1of4">
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake2.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_floral-->
 							
@@ -118,7 +132,7 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake3.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_ribbons -->
 							
@@ -127,12 +141,11 @@
 
 
 
-
 					<div class="col-1of4">
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake4.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_antique -->		
 					
@@ -142,7 +155,7 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake5.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_polkadots-->		
 					
@@ -152,7 +165,7 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake6.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_cupcakes -->		
 					
@@ -162,7 +175,7 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake7.png" width="150" height="200">
 							Gift Box Cake</a>
 
 						</div> <!-- category_topper -->	
@@ -175,9 +188,8 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake8.png" width="150" height="200">
 							Gift Box Cake</a>
-
 						</div> <!-- category_new -->
 						
 					</div><!-- ending col 1 of 4 -->
@@ -187,7 +199,7 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake9.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_classics -->
 
@@ -199,7 +211,19 @@
 
 						<div class="category">
 
-							<a href="product_menu.html"><img src="img/cakes/Gift-box-cake.png" width="150" height="200">
+							<a href="product_details.html"><img src="img/cakes/cake11.png" width="150" height="200">
+							Gift Box Cake</a>
+						</div> <!-- category_floral-->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+
+					<div class="col-1of4">
+
+						<div class="category">
+
+							<a href="product_details.html"><img src="img/cakes/cake10.png" width="150" height="200">
 							Gift Box Cake</a>
 						</div> <!-- category_floral-->
 							
@@ -224,3 +248,5 @@
 
 
 </html>
+
+
