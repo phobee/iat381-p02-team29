@@ -5,7 +5,6 @@
 	<head>
 
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
@@ -17,67 +16,53 @@
 
 	<body>
 
-		<header id="top"> <!-- top-->
-				
-			<div id="logo">
-				<!-- Company logo here -->
-				<a href="home.html"><img src="img/logo.png" alt="logo"></a>	
-			</div>	
+		<header id="top"> <!-- top banner -->
 
-			<nav class="top_grid">
+			<nav class ="grid">
 
 				<!-- beginning of the 4 navigation items -->
 				<div class="nav_col">
 					<div id="home">
-						<a class="button" href="home.html">home</a>
+						<a href="home.html">Home</a>
 					</div>
 				</div>
 
 				<div class="nav_col">
 					<div id="menu">
-						<ul>
-							<li><a class="button" href="product_menu.html">menu</a>
-						
-								<ul class="categories_item">
-									<li><a href="product_menu.html">new arrivals</a></li>
-									<li><a href="product_menu.html">classics</a></li>
-									<li><a href="product_menu.html">florals</a></li>
-									<li><a href="product_menu.html">ribbons</a></li>
-									<li><a href="product_menu.html">antique</a></li>
-									<li><a href="product_menu.html">polkadots</a></li>
-									<li><a href="product_menu.html">cupcakes</a></li>
-									<li><a href="product_menu.html">toppers</a></li>
-								</ul>
-
-							</li>
-						</ul>
-					</div>	
+						<a href="product_menu.html">Menu</a>
+					</div>
 				</div>
 
 
 				<div class="nav_col">
 					<div id="contact_us">
-						<a class="button" href="contact_us.html">contact us</a>
+						<a href="contact_us.html">Contact Us</a>
 					</div>
 				</div>	
 
 				<div class="nav_col">
 					<div id="shopping_cart">
-						<a class="button" href="shopping_cart.html">shopping cart</a>
+						<a href="shopping_cart.html">Shopping Cart</a>
 					</div>
 				</div>
 
-				<!-- end of the 4 navigation items -->							
+				<!-- end of the 4 navigation items -->
+				
+				<div class="logo">
+				<!-- Company logo here -->
+					<h1>Together</h1>
+				</div>							
+
 			</nav> <!--  end of nav grid class-->
 
 			<div class="image_banner">
-				<div id="detail_banner">
 				<!-- full width image -->
-				</div>
+				<img/>
+
 			</div>
-			
 
 		</header>
+
 
 		<!-- end of top -->
 			
@@ -87,12 +72,13 @@
 
 				<div class="product_details">
 
-					<h2>DEATILED PRODUCT VIEW</h2>
-
 					<div class="col-1of2">
 
 						<div class="product_image">
-							<a href="img/cakes/Gift-box-cake.png"><img src="img/cakes/Gift-box-cake.png" width="280" height="420"></a>
+
+							<p>
+								Product  img
+							</p>
 						</div> <!-- ending product_image  -->
 						
 					</div><!-- ending col 1 of 2 -->
@@ -102,19 +88,11 @@
 
 						<div class="product_info">
 
-							<h3>Gift Box Cake</h3>
-
-							<p>Product info</br>
-								Price $20.00</br>
-								Amount </br>
+							<p>
+								Product info
 							</p>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra metus eu hendrerit sollicitudin. Donec dignissim, nibh a vehicula interdum, eros odio auctor lectus, nec dignissim purus lacus ac purus. Donec nulla mauris, scelerisque non nisl non, molestie ultrices ante. Duis lacinia dui dui, nec ultricies diam gravida in. Nunc pellentesque consequat tortor eu fermentum. Duis nec quam pretium, lobortis massa lacinia, facilisis magna. Sed non ultrices elit. Praesent magna purus, dignissim eget elit in, varius facilisis eros. Sed sed sapien metus.</p>
-
 						</div> <!-- ending product_info -->
-
-						<form method="post" action="shopping_cart.html"><input type="submit" value="ADD TO CART" id="submit"></form
-						>
+						
 					</div><!-- ending col 1 of 2 -->
 
 
@@ -131,92 +109,37 @@
 			
 			<nav class="grid">
 
-			<div class="b-col-1of1">
-
-				<div class="b-col-1of3">
+				<div class="col-1of3">
 
 						<div class="related_products">
 
-							<h3>RELATED PRODUCTS</h3>
-
-
-							<div class="b-col-1of2">
-
-								<a class="suggestion" href=""><img src='http://placehold.it/150X200' alt="logo" width="150" height="200"></a>	
-
-							</div>
-
-							<div class="b-col-1of2">
-
-								<a class="suggestion" href=""><img src='http://placehold.it/150X200' alt="logo" width="150" height="200"></a>	
-							</div>
-
-
-							<div class="b-col-1of2">
-								<a class="suggestion" href=""><img src='http://placehold.it/150X200' alt="logo" width="150" height="200"></a>	
-
-							</div>
-
-							<div class="b-col-1of2">
-								<a class="suggestion" href=""><img src='http://placehold.it/150X200' alt="logo" width="150" height="200"></a>	
-
-							</div>
-
-							
+							<p>
+								related products
+							</p>
 						</div> <!-- end of  related_products -->
 						
 				</div><!-- ending col 1 of 3 -->
 
-			</div>
 
-				<div class="b-col-1of3">
+				<div class="col-1of3">
 
 						<div class="product_feedback">
 
-						
-						<h3>COMMENTS</h3>
-						
-						<form method="post" action="home.html" id="comments">
-
-							<label for="form-name">Name:</label>
-						    <input type="text" id="form-name" name="form-name" placeholder="Jane Doe">
-
-						    <label for="form-subject">Subject:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="A title for your comment">
-						      
-						    <label for="form-comment">Product Comments:</label>
-						    <textarea id="form-comment" name="form-comment" placeholder="Please place comment here"></textarea>
-
-						    <input type="submit" value="submit your comment." id="submit">
-
-						</form>
-
-				
+							<p>
+								product_feedback
+							</p>
 						</div> <!-- end of  product_feedback -->
 						
 				</div><!-- ending col 1 of 3 -->
 
 
-				<div class="b-col-1of3">
+				<div class="col-1of3">
 
-						<div class="company_info">
+						<div class="product_feedback">
 
-						<h3>TOGETHER's INFO</h3>
-
-						<p class="contact_info">
-							+1 (604) 232-8888 </br>
-							250-13450 102nd Avenue</br>
-							Surrey, B.C.</br>
-							Canada V3T 0A3</br>
-							weddingcakes@together.ca
-
-						</p>
-						
-						
-						<!-- Company logo here -->
-							<a class="small_logo" href="home.html"><img src='img/logo.png' alt="logo" width="190" height="163"></a>	
-						
-
+							<p>
+								product_feedback
+							</p>
 						</div> <!-- end of  product_feedback -->
 						
 				</div><!-- ending col 1 of 3 -->
@@ -224,7 +147,7 @@
 
 			</nav> <!-- end of grid -->
 			
-		</div> <!-- end of "feedback_content_wrap" -->
+		</div> <!-- end of "body_content_wrap" -->
 
 		<div id="footer">
 			<p> &copy; 2014 Together. Website by Tina Lin &amp; Phoebe Ho  <p>
