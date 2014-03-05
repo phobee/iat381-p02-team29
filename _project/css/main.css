@@ -23,7 +23,11 @@ h2 {
 	color:#BFAC97; 
 	margin:0;
 }
-  
+ 
+h3{
+	color:#BFAC97; 
+	font-weight: bold;
+}
 p {
 
 	font-size: 1rem;
@@ -64,7 +68,7 @@ p {
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #91D8D5;
-	background-color: rgba(144,216,213,0.1);
+	background-color: rgba(144,216,213,0.2);
 	border-radius: 0.3rem;
 	border:white double 0.3rem;
 
@@ -144,26 +148,13 @@ nav ul li:hover > ul {
 
 }
 
-
-
-.image_banner{
-
-	height:28rem;
-	width:100%;
-	background-image: url('../img/home_banner.jpg');
-	background-repeat: no-repeat;
-	background-position: 20% 15%;
-	background-size: 1920px;
-
-}
-
 #home_banner{
 
 	height:28rem;
 	width:100%;
 	background-image: url('../img/home_banner.jpg');
 	background-repeat: no-repeat;
-	background-position: 20% 15%;
+	background-position: 20% 11%;
 	background-size: 1920px;
 
 }
@@ -178,17 +169,56 @@ nav ul li:hover > ul {
 	background-size: 1920px;
 }
 
+#detail_banner
+{
+	height:28rem;
+	width:100%;
+	background-image: url('../img/detail.jpg');
+	background-repeat: no-repeat;
+	background-position: 55% 40%;
+	background-size: 1920px;
+}
 
+
+#shopping_banner
+{
+	height:28rem;
+	width:100%;
+	background-image: url('../img/menu_banner.jpg');
+	background-repeat: no-repeat;
+	background-position: 20% 55%;
+	background-size: 1920px;
+}
+
+#menu_banner{
+	height:28rem;
+	width:100%;
+	background-image: url('../img/banner1.jpg');
+	background-repeat: no-repeat;
+	background-position: 20% 50%;
+	background-size: 1920px;
+
+}
 #contact_banner
 {
 	height:28rem;
 	width:100%;
-	background-image: url('../img/home_banner.jpg');
+	background-image: url('../img/contact_banner.jpg');
 	background-repeat: no-repeat;
-	background-position: 20% 15%;
+	background-position: 40% 25%;
 	background-size: 1920px;
 }
 
+
+#payment_banner
+{
+	height:28rem;
+	width:100%;
+	background-image: url('../img/purchase_banner.jpg');
+	background-repeat: no-repeat;
+	background-position: 100% 70%;
+	background-size: 1920px;
+}
 /*------------- END OF HEADER ------------- */
 
 
@@ -200,9 +230,18 @@ nav ul li:hover > ul {
 
 	font-size: 1.5rem;
 }
-#about_us {
-	text-align: center;	
+
+.sidebyside .title{
+
+	width:90%;
 }
+
+#home{
+
+	width:70%;
+	margin:0 auto;
+}
+
 
 /*contact us*/
 
@@ -222,19 +261,22 @@ nav ul li:hover > ul {
 	
 }
 
-#company_feedback form label {
+#company_feedback label {
+
 	display: block;
+	clear: both;
+
 	margin: 0.5rem 0;
-	/*ask y display block doesnt work*/
 }
 
-#company_feedback form label:first-of-type{
+#company_feedback label:first-of-type{
 
 	margin-top:0;
 }
 
+
 #company_feedback input[type=text]{
-	width:22.5rem;
+	width:20rem;
 	height:2rem;
 	border-radius: 0.3rem;
 	font-family: 'Gafata', sans-serif;
@@ -246,17 +288,17 @@ input[type=submit]{
 
 	background-color: rgba(191,172,151,0.8);
 	width: 10rem;
-	height:2rem;
+	height:3rem;
 	border-radius: 0.3rem;
 	margin-top: 0.7rem;
 	font-family: 'Gafata', sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	
 }
 
 #company_feedback form textarea {
 	display: block;
-	width: 22.5rem;
+	width: 20rem;
 	height: 8rem;
 	clear: right;
 	border-radius: 0.3rem;
@@ -279,13 +321,13 @@ input[type=submit]{
 	padding-right: 2rem;	
 }
 
-#total_price .col-1of4, #make_payment .col-1of4{
+.total_price .col-1of4, .make_payment .col-1of4{
 
 	float:right;
 	clear:both;
 }
 
-#make_payment input[type=submit]{
+.make_payment input[type=submit]{
 
 	background-color: #BFAC97;
 	width: 100%;
@@ -293,19 +335,41 @@ input[type=submit]{
 	border-radius: 0.3rem;
 	margin-top: 0.7rem;
 	font-family: 'Gafata', sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 
-	
+}
+
+#cart_wrapper{
+
+	width: 80%;
+	margin:0 auto;
 }
 /*product menu*/
 
-#category {
+
+.fours{
+
+	height: auto;
+	overflow: auto;
+	width: 100%;
+
+}
+
+
+.title{
 
 	display:block;
 	width:100%;
 	clear:both;
+	padding-bottom: 1rem;
 	margin-bottom: 3rem;
-	text-align: center;
+	border-bottom: rgba(191,172,151,0.5) double 0.2rem;
+}
+
+.fours:last-of-type{
+
+	border-bottom: rgba(191,172,151,0.5) double 0.2rem;
+
 }
 
 .category{
@@ -341,18 +405,24 @@ input[type=submit]{
 
 	background-color: rgba(191,172,151,0.1);
 	border-radius: 1rem;
+	border: white double 0.3rem;
 	
 }
 
 .category_wrap .col-1of4{
 	padding: 0 0 3rem 0;
 }
-/*product details*/
-.product_image {
 
-	border: 1px solid black;
-	margin: 1.5rem 0;
+
+/*product details*/
+
+
+
+.product_image {
+	text-align: center;
+	margin-bottom: 1.5rem ;
 }
+
 
 .product_info {
 	margin:2rem 1rem;
@@ -364,7 +434,7 @@ input[type=submit]{
 	margin: 1rem;
 	height:auto;
 	overflow: auto;
-	max-width: 90%;
+	max-width: 65%;
 	
 }
 
@@ -373,6 +443,10 @@ input[type=submit]{
 	text-align: center;
 }
 
+.b-col-1of3:nth-of-type(2)
+{
+	height:100%;
+}
 
 .product_feedback form label {
 	display: block;
@@ -397,7 +471,7 @@ input[type=submit]{
 .product_feedback form textarea {
 	display: block;
 	width: 18rem;
-	height: 8rem;
+	height: 9rem;
 	clear: right;
 	border-radius: 0.3rem;
 	font-family: 'Gafata', sans-serif;
@@ -406,15 +480,17 @@ input[type=submit]{
 }
 
 
-/*-------------  END OF BODY CONTENT WRAP ------------- */
+.b-col-1of1{
 
+	height:100%;
 
-/*----------------TINA just to show u where the last three column border is ----------- can be deleted later--------------------------------------------*/
+}
 .b-col-1of3, .b-col-1of1{ 
 
 	margin: 3rem 0; 
 	border-right: 0.2rem double rgba(191,172,151,0.4); 
 }
+
 
 .b-col-1of3:first-of-type{ 
 
@@ -426,6 +502,10 @@ input[type=submit]{
 
 	border-right: none; 
 }
+
+
+
+/*-------------  END OF BODY CONTENT WRAP ------------- */
 
 /*-------------  FOOTER -------------  */
 

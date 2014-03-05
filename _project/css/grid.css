@@ -29,8 +29,15 @@
 .col-1of1 {
 
 	width: 100%;
+
 }
 
+/*#about_us
+{
+	width: 50%;
+	margin: 0 auto;
+}
+*/
 
 .col-1of2, .col-2of4, .b-col-1of2{
 
@@ -46,6 +53,11 @@
 
 }
 
+.col-3of4{
+
+	width: 75%;
+	
+}
 
 .b-col-1of1 .b-col-1of3{
 
@@ -146,7 +158,6 @@
 	
 	}	
 
-
 	/*changes the text navigation bar to icon full width navigation bar*/
 
 	.top_grid{
@@ -228,12 +239,12 @@
 	}
 
 
-	#floral_banner, #home_banner, #contact_banner,.image_banner{
+	#floral_banner, #home_banner, #contact_banner,.image_banner, #menu_banner, #detail_banner, #payment_banner, #shopping_banner{
 
 		height: 20rem;
 		width: 100%;
-		background-position: 90% 5%;
-		background-size: 1100px;
+		background-position: 60% 5%;
+		background-size: 1000px;
 	
 	}
 
@@ -256,7 +267,7 @@
 
 	}
 
-	.col-2of4, .col-1of4, .col-1of3, .b-col-1of3{
+	.col-2of4, .col-1of4, .col-1of3, .b-col-1of3, .col-3of4{
 		
 		width: 50%;
 
@@ -268,6 +279,13 @@
 
 	}
 
+	.twos{
+
+		height: auto;
+		overflow: auto;
+		width: 100%;
+
+	}
 
 
 	/*only for shopping cart columns*/
@@ -291,13 +309,35 @@
 		border-right: none;
 	}
 
+
 	.b-col-1of3:first-of-type{ 
 
 		margin: 0; 
 		border-bottom: 0.2rem double rgba(191,172,151,0.4); 
+		border-top: 0.2rem double rgba(191,172,151,0.4); 
   		padding-bottom:1rem;
 	
 	}
+
+	/*heading*/
+
+	.title{
+		margin: 1.5rem 0;
+	}
+
+	.make_payment .col-1of4{
+
+		width:50%;
+
+	}
+
+	/*shopping cart*/
+	#cart_wrapper{
+
+	width: 100%;
+	margin:0 auto;
+}
+
 
 
 }/*end of the settings when the screen is smaller than 730px*/
@@ -310,18 +350,23 @@
 
 
 	.category{
+
 		border-bottom: 0.2rem double rgba(191,172,151,0.4); 
   		padding-bottom:2rem;
 	}
 
+	.category:last-of-type{
+		
+		
+	}
 
 	.category_wrap .col-1of4{
-	padding:0;
-}
+		padding:0;
+	}
 
 	/*grids*/
 
-	.col-1of3, .b-col-1of3, .col-1of4{
+	.col-1of3, .b-col-1of3, .col-1of4, .col-3of4{
 
 		width: 100%;
 
@@ -333,12 +378,12 @@
 
 	}
 
-	#floral_banner, #home_banner, #contact_banner, .image_banner{
+	#floral_banner, #home_banner, #contact_banner,.image_banner, #menu_banner, #detail_banner, #payment_banner, #shopping_banner{
 			
 		height: 15rem;
 		width:100%;
-		background-size: 900px;	
-		background-position: 70% 5%;
+		background-size: 700px;	
+		background-position: 70% 25%;
 	}
 
 
@@ -356,6 +401,10 @@
 		margin: auto;
 	}
 
+	.sidebyside .title{
+		width:100%;
+	}
+
 
 	/*only for shopping cart columns*/
 	.one_item .col-1of4, #total_price .col-1of4, #make_payment .col-1of4{
@@ -370,7 +419,6 @@
 		margin: 0; 
 		border-bottom: 0.2rem double rgba(191,172,151,0.4); 
   		padding-bottom:1rem;
-  		/*ask how to make height the same so border extend*/
 	}
 
 	.b-col-1of3:first-of-type{ 
@@ -378,6 +426,13 @@
 		border-bottom: none; 
   		padding-bottom:0 ;
 	
+	}
+
+	/*shopping cart*/
+
+	input[type=checkbox]{
+
+		float:right;
 	}
 
 
