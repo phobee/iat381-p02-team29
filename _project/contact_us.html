@@ -5,6 +5,7 @@
 	<head>
 
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
@@ -15,68 +16,95 @@
 	</head>
 
 	<body>
+		<header id="top"> <!-- top-->
+				
+			<div id="logo">
+				<!-- Company logo here -->
+				<a href="home.html"><img src="img/logo.png" alt="logo"></a>	
+			</div>	
 
-		<header id="top"> <!-- top banner -->
+			<nav class="top_grid">
 
-			<nav class ="grid">
 				<!-- beginning of the 4 navigation items -->
 				<div class="nav_col">
 					<div id="home">
-						<a href="home.html">Home</a>
+						<a class="button" href="home.html">home</a>
 					</div>
 				</div>
 
 				<div class="nav_col">
 					<div id="menu">
-						<a href="product_menu.html">Menu</a>
-					</div>
+						<ul>
+							<li><a class="button" href="category_menu.html">menu</a>
+						
+								<ul class="categories_item">
+									<li><a href="product_menu.html">new arrivals</a></li>
+									<li><a href="product_menu.html">classics</a></li>
+									<li><a href="product_menu.html">florals</a></li>
+									<li><a href="product_menu.html">ribbons</a></li>
+									<li><a href="product_menu.html">antique</a></li>
+									<li><a href="product_menu.html">polkadots</a></li>
+									<li><a href="product_menu.html">cupcakes</a></li>
+									<li><a href="product_menu.html">toppers</a></li>
+								</ul>
+
+							</li>
+						</ul>
+					</div>	
 				</div>
 
 
 				<div class="nav_col">
 					<div id="contact_us">
-						<a href="contact_us.html">Contact Us</a>
+						<a class="button" href="contact_us.html">contact us</a>
 					</div>
 				</div>	
 
 				<div class="nav_col">
 					<div id="shopping_cart">
-						<a href="shopping_cart.html">Shopping Cart</a>
+						<a class="button" href="shopping_cart.html">shopping cart</a>
 					</div>
 				</div>
 
-				<!-- end of the 4 navigation items -->
-				
-				<div class="logo">
-				<!-- Company logo here -->
-					<h1>Together</h1>
-				</div>							
-
+				<!-- end of the 4 navigation items -->							
 			</nav> <!--  end of nav grid class-->
 
 			<div class="image_banner">
+				<div id="contact_banner">
 				<!-- full width image -->
-				<img/>
-
+				</div>
 			</div>
-
-		</header>
-
-
-		<!-- end of top -->
 			
+
+		</header><!-- end of top -->
+
+
 		<div id="body_content_wrap">
 			
 			<nav class="grid">
+
+			<div class="sidebyside">
 
 				<div class="col-1of2">
 
 					<div id="company_info">
 
-						<h2>COMPANY INFO</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae dui nisi. Curabitur quis bibendum dolor, ultricies pellentesque urna. Donec non vehicula nisl. Quisque consectetur adipiscing dapibus. Duis semper sagittis enim et semper. Praesent semper eget ipsum non condimentum.
+						<h2 class="title">COMPANY INFO</h2>
+
+						<h3>Together</h3>
+
+						<p class="contact_info">
+							+1 (604) 232-8888 </br>
+							250-13450 102nd Avenue</br>
+							Surrey, B.C.</br>
+							Canada V3T 0A3</br>
+							weddingcakes@together.ca
+
 						</p>
+							
+						<img src="img/baker.jpg" alt="baker's image" width="390" height="275">
+						
+
 					</div> <!-- ending company info -->
 						
 				</div><!-- ending col 1 of 2 -->
@@ -85,15 +113,34 @@
 
 					<div id="company_feedback">
 
-						<h2>COMMENT</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae dui nisi. Curabitur quis bibendum dolor, ultricies pellentesque urna. Donec non vehicula nisl. Quisque consectetur adipiscing dapibus. Duis semper sagittis enim et semper. Praesent semper eget ipsum non condimentum.
-						</p>
+						<h2 class="title">COMMENTS</h2>
+						
+						<form method="post" action="home.html" id="comments">
+
+							<label for="form-name">Name:</label>
+						    <input type="text" id="form-name" name="form-name" placeholder="Jane Doe">
+
+						    <label for="form-subject">Subject:</label>
+						    <input type="text" id="form-subject" name="form-subject" placeholder="A title for your comment">
+
+						    <label for="form-subject">Phone:</label>
+						    <input type="text" id="form-subject" name="form-subject" placeholder="(xxx) xxx-xxxx">
+
+						    <label for="form-subject">Email:</label>
+						    <input type="text" id="form-subject" name="form-subject" placeholder="123@gmail.com">
+						      
+						    <label for="form-comment">Comment:</label>
+						    <textarea id="form-comment" name="form-comment" placeholder="Please place comment here"></textarea>
+
+						    <input type="submit" value="submit your comment." id="submit">
+
+						</form>
+
 					</div> <!-- ending company feedback -->
 						
 				</div><!-- ending col 1 of 2 -->
 
-
+			</div>
 				
 			</nav> <!-- end of grid -->
 
