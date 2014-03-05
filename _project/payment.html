@@ -135,23 +135,23 @@
 
 				<div class="col-1of2">
 
-					<div id="company_feedback">
+					<div class="company_feedback">
 
 						<h2 class="title">YOUR DEATILS</h2>	
 
 						<form method="post" action="home.html" id="your_details">
 
-							<label for="form-name">Bride's Name:</label>
-						    <input type="text" id="form-name" name="form-name" placeholder="Jane Doe">
+							<label >Bride's Name:</label>
+						    <input type="text" name="form-name" placeholder="Jane Doe">
 
-						    <label for="form-subject">Broom's Name:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="Danny Blur">
+						    <label >Broom's Name:</label>
+						    <input type="text" name="form-subject" placeholder="Danny Blur">
 
-						    <label for="form-subject">Wedding date &amp; time of delivery:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="02/29/2013 8:00p.m">
+						    <label >Wedding date &amp; time of delivery:</label>
+						    <input type="text" name="form-subject" placeholder="02/29/2013 8:00p.m">
 
-						    <label for="form-subject">Address:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="8888 University Dr,Burnaby, V5A 1S6">
+						    <label >Address:</label>
+						    <input type="text" name="form-subject" placeholder="8888 University Dr,Burnaby, V5A 1S6">
 						      
 						    <label for="form-comment">Additional Information:</label>
 						    <textarea id="form-comment" name="form-comment" placeholder="Please place additional information here"></textarea>
@@ -164,7 +164,7 @@
 
 				<div class="col-1of2">
 
-					<div id="company_feedback">
+					<div class="company_feedback">
 
 						<h2 class="title">CARD INFORMATION</h2>
 					
@@ -172,25 +172,39 @@
 							<label for="form-name">Card Number:</label>
 						    <input type="text" id="form-name" name="form-name" placeholder="4300 2560 3450 2200">
 
+						<div id="card_form">
 						    
+						<div class="col-1of4">
 						    <label for="form-name">Card Type:</label>
-
-						    <input type="radio" name="card" value="visa">VISA 
+						    
+						    <input type="radio" name="card" value="visa">VISA <br>
 							<input type="radio" name="card" value="master">Mastercard
+						</div>
 
-							<label for="form-name">Security Code:</label><input type="password" name="pwd" placeholder="***">
+						<div class="col-3of4">
+
+							<div class="col-1of1">
+
+							<label for="form-name">Date of Expiry:</label><input type="text" name="date" placeholder="02/19">
+
+							</div>
+
+							<div class="col-1of1">
+							<label for="form-name">Security Code:</label><input type="text" name="pwd" placeholder="***">
+
+							</div>
+						</div>
 
 
-							<label for="form-name">Date od Expiry:</label><input type="text" name="date" placeholder="02/19">
-
-							<form method="post" action="shopping_cart.html" id="comments">
-						   	<input type="submit" value="RETURN TO CART">
-
+						</div>
 						  
 
-						<form method="post" action="home.html" id="comments">
+						<form method="post" action="home.html">
 						   <input type="submit" value="CONFIRM PAYMENT">
+						</form>
 
+						<form method="post" action="shopping_cart.html" id="comments">
+						   	<input type="submit" value="RETURN TO CART">
 						</form>
 
 					</div> <!-- ending company feedback -->
@@ -199,7 +213,7 @@
 
 
 				</div><!-- end of sidebyside -->
-				
+
 			</nav> <!-- end of grid -->
 
 			
