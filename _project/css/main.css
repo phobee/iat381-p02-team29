@@ -33,6 +33,16 @@ p {
 	font-size: 1rem;
 }
 
+li{
+
+	list-style: none;
+
+}
+
+ul{
+	padding: 0;
+}
+
 /* ------------- HEADER ---------------- */
 
 #logo{
@@ -236,16 +246,28 @@ nav ul li:hover > ul {
 	width:90%;
 }
 
-#home{
+
+#home_wrapper .col-1of2{
+
+	width:50%;
+	height: auto;
+	margin:0 auto;
+}
+
+#home_wrapper{
 
 	width:70%;
 	margin:0 auto;
 }
 
+.sidebyside img{
+	float:left;
+}
+
 
 /*contact us*/
 
-#company_feedback h2, #company_info h2{
+.company_feedback h2, #company_info h2{
 	padding-bottom: 2rem;
 }
 
@@ -261,7 +283,11 @@ nav ul li:hover > ul {
 	
 }
 
-#company_feedback label {
+
+
+/*forms*/
+
+.company_feedback label {
 
 	display: block;
 	clear: both;
@@ -269,13 +295,13 @@ nav ul li:hover > ul {
 	margin: 0.5rem 0;
 }
 
-#company_feedback label:first-of-type{
+.company_feedback label:first-of-type{
 
 	margin-top:0;
 }
 
 
-#company_feedback input[type=text]{
+.company_feedback input[type=text] {
 	width:20rem;
 	height:2rem;
 	border-radius: 0.3rem;
@@ -283,6 +309,10 @@ nav ul li:hover > ul {
 	font-size: 1rem;
 }
 
+
+#card_form .col-1of4, #card_form .col-3of4{
+	margin-top: 1rem;
+}
 
 input[type=submit]{
 
@@ -296,7 +326,7 @@ input[type=submit]{
 	
 }
 
-#company_feedback form textarea {
+.company_feedback form textarea {
 	display: block;
 	width: 20rem;
 	height: 8rem;
@@ -319,6 +349,7 @@ input[type=submit]{
 	width: 100%;
 	height:auto;
 	padding-right: 2rem;	
+
 }
 
 .total_price .col-1of4, .make_payment .col-1of4{
@@ -502,8 +533,6 @@ input[type=submit]{
 
 	border-right: none; 
 }
-
-
 
 /*-------------  END OF BODY CONTENT WRAP ------------- */
 

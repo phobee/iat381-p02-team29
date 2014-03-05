@@ -239,7 +239,7 @@
 	}
 
 
-	#floral_banner, #home_banner, #contact_banner,.image_banner, #menu_banner, #detail_banner, #payment_banner, #shopping_banner{
+	#floral_banner, #home_banner, #contact_banner,  #detail_banner, #shopping_banner{
 
 		height: 20rem;
 		width: 100%;
@@ -247,6 +247,16 @@
 		background-size: 1000px;
 	
 	}
+
+	 #menu_banner, #payment_banner{
+
+	 	height: 20rem;
+		width: 100%;
+		background-position: 60% 50%;
+		background-size: 1000px;
+
+	 }
+
 
 	/*grids*/
 
@@ -297,10 +307,9 @@
 
 
 	#company_info img{
-
-		margin: 2.7rem auto;
-		height:auto;
-		width:90%;
+		margin: 1rem 0;
+		max-width: 100%;
+		width:100%;
 	}
 
 	.b-col-1of3, .b-col-1of1{ 
@@ -325,18 +334,26 @@
 		margin: 1.5rem 0;
 	}
 
+
+
+	/*shopping cart*/
+	#cart_wrapper{
+
+		width: 100%;
+		margin:0 auto;
+	}
+
+	#home_wrapper{
+
+		width:100%;
+		margin:0 auto;
+	}
+
 	.make_payment .col-1of4{
 
 		width:50%;
 
 	}
-
-	/*shopping cart*/
-	#cart_wrapper{
-
-	width: 100%;
-	margin:0 auto;
-}
 
 
 
@@ -366,7 +383,7 @@
 
 	/*grids*/
 
-	.col-1of3, .b-col-1of3, .col-1of4, .col-3of4{
+	.col-1of3, .b-col-1of3, .col-1of4, .col-3of4, #home_wrapper .col-1of2{
 
 		width: 100%;
 
@@ -378,14 +395,23 @@
 
 	}
 
-	#floral_banner, #home_banner, #contact_banner,.image_banner, #menu_banner, #detail_banner, #payment_banner, #shopping_banner{
-			
+	#floral_banner, #home_banner, #contact_banner,  #detail_banner, #shopping_banner{
+
 		height: 15rem;
 		width:100%;
 		background-size: 700px;	
 		background-position: 70% 25%;
+	
 	}
 
+	 #menu_banner, #payment_banner{
+
+	 	height: 15rem;
+		width:100%;
+		background-size: 700px;	
+		background-position: 70% 35%;
+
+	 }
 
 	#body_content_wrap
 	{
@@ -436,10 +462,29 @@
 	}
 
 
+	.make_payment .col-1of4{
+
+		width:70%;
+
+	}
+
+	/*form*/
+
+	.company_feedback input[type=text], .company_feedback form textarea, .product_feedback input[type=text],.product_feedback form textarea{
+	 	width: 100%;
+	 }
+
+
+	 input[type=submit]{
+	 	width:100%;
+	 }
+
 	#footer{
 
 		max-width: 100%;
 		
 	}
+
+
 
 }/*end of the settings when the screen is smaller than 320px*/
