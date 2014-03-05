@@ -2,40 +2,75 @@
 	float:left;
 }
 
+.top_grid{
+
+	width:50%;
+	float:right;
+	margin-right: 8%;
+}
+
+
+
 .nav_col{
 
-	max-width: 60%;
-	width: 15%;
-	float:right;
-	padding-top: 1.5rem;
+	display: inline-block;
+	width: 25%;
+	float:left;
 }
+
+
+.image_banner{
+	border:0;
+	padding:0;
+	clear:both;
+}
+
 
 .col-1of1 {
 
 	width: 100%;
+
 }
 
+/*#about_us
+{
+	width: 50%;
+	margin: 0 auto;
+}
+*/
 
-.col-1of2{
+.col-1of2, .col-2of4, .b-col-1of2{
 
 	width: 50%;
 	
 }
 
+.b-col-1of1{
 
-.col-2of4{
-
-	width: 50%;
-	
-}
-
-
-.col-1of3{
-		
+	height: auto;
+	overflow: auto;
 	width: 33.3%;
 
 }
 
+.col-3of4{
+
+	width: 75%;
+	
+}
+
+.b-col-1of1 .b-col-1of3{
+
+	width: 100%;
+
+}
+
+
+.col-1of3, .b-col-1of3{
+		
+	width: 33.3%;
+
+}
 
 .col-1of4{
 
@@ -61,16 +96,27 @@
 
 	max-width: 80%;
 	margin: 0 auto;
-	background:rgba(255,255,255,0.7);
-	padding:5%;
-
+	background:rgba(255,247,240,0.7);
+	padding:5% ;
 }
 
-.image_banner{
 
-	border:0;
+#feedback_content_wrap{
+
+	max-width: 100%;
+}
+
+.b-col-1of3, .b-col-1of1{
+	height:auto;
+	overflow: auto;
+	padding:3%;
+}
+
+
+.b-col-1of3:first-of-type{
 	padding:0;
 }
+
 
 
 
@@ -83,98 +129,93 @@
 
 /*when the screen is smaller then 800px*/
 @media (max-width: 960px){
-	
-
-	/*only for shopping cart columns*/
-
-
-	.one_item .col-1of4{
-
-		width: 25%;
-		
-		
-
-	}
-
-/*
-	.one_item .col-1of4 .shop_item_quantity{
-		
-		width: 50%;
-		
-	}*/
-
-	/*end of only for shopping cart columns*/
-
-	/*changes the text navigation bar to icon full width navigation bar*/
-
-	.nav_col{
-		max-width: 100%;
-		width: 25%;
-		padding:0;
-		
-	}
-
-
-	.col-1of3 .related_products{
-		
-		width: 100%;
-
-	}
-
-	.col-1of3{
-
-		width: 50%;
-
-	}
-
-
-
-	.col-1of2{
-		width: 100%;
-
-	}
-
-
-	.col-2of4{
-		width: 50%;
-
-	}
-
-
-	.col-1of4{
-		width: 50%;
-
-	}
-
-	
 
 	/*remove logo*/
-	.logo{
+	#logo{
 
 		display:none;
 	}
 
+	#top{
+		line-height: 0rem;
+
+	}
+
+
+	.button:link, .button:visited { 
+		
+		background-color: transparent;
+		border-radius: 0;
+		border:none;
+
+	}
+
+	/*keep color the same*/
+	.nav_col:hover,.nav_col:focus,.nav_col:active {
+
+  		background-color: rgba(147,216,213,0.5);
+		border-radius: 0;
+	
+	}	
+
+	/*changes the text navigation bar to icon full width navigation bar*/
+
+	.top_grid{
+
+		height:5rem; /* learn on web that adds height to the parent div */
+		overflow: auto; /* learn on web that adds height to the parent div */
+		width: 100%;
+		float:none;
+		margin: 0;
+		border-bottom: rgba(147,216,213,0.5) double 0.2rem;	
+
+	}
+
+
+	/*create an border-bottom to separate the navigation bar from the image below*/
+	.nav_col{
+		
+		background-color: rgba(147,216,213,0.5);
+		width: 25%;
+		display: inline-block;	
+		float:left;
+		border-right: white double 0.2rem;
+		font-size: 0;
+	}
+
+
+	.nav_col:last-of-type
+	{
+		border-right: none;
+	}
+
+
+	#menu{
+
+		height: 5rem;
+	}
+
 
 	/*overwrite font and hover properties from before, also set the height size since it is an icon*/
-	#top a:link, #top a:visited, #top a:hover, #top a:focus, #top a:active{ 
+	.top_grid a:link, .top_grid a:visited, .top_grid a:hover, .top_grid a:focus, .top_grid a:active{ 
 
-		display: block;
-		height:4rem;
-		font-size: 0;
+		display: inline-block;
+		height:5rem;
+		width:100%;
 		
 	}
 
 	/*change each text navigation to icon*/
 	nav #home{
-		border-left: white solid;
 		background-image: url('../img/home.png');
 		background-size: 5rem;
 		background-repeat: no-repeat;
 		background-position: center;
+
+
 	}
 
 	nav #contact_us{
-		border-left: white solid;
 		background-image: url('../img/contactus.png');
 		background-size: 5rem;
 		background-repeat: no-repeat;
@@ -190,29 +231,113 @@
 	}
 
 	nav #menu{
-		border-left: white solid;
-		background: #91D8D5;
+
 		background-image: url('../img/menu.png');
 		background-size: 5rem;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 
-	/*create an border-bottom to separate the navigation bar from the image below*/
-	nav .nav_col{
 
-		border-bottom: gray solid 0.3rem;
-		background: #91D8D5;
-	}
-
-
-	.image_banner{
+	#floral_banner, #home_banner, #contact_banner,.image_banner, #menu_banner, #detail_banner, #payment_banner, #shopping_banner{
 
 		height: 20rem;
 		width: 100%;
-		
+		background-position: 60% 5%;
+		background-size: 1000px;
 	
 	}
+
+	/*grids*/
+
+	.b-col-1of1{
+
+		height: auto;
+		overflow: auto;
+		width: 100%;
+		display: block;
+		clear:both;
+
+	}
+
+
+	.col-1of2{
+		
+		width: 100%;
+
+	}
+
+	.col-2of4, .col-1of4, .col-1of3, .b-col-1of3, .col-3of4{
+		
+		width: 50%;
+
+	}
+
+	.b-col-1of2{
+		
+		width: 25%;
+
+	}
+
+	.twos{
+
+		height: auto;
+		overflow: auto;
+		width: 100%;
+
+	}
+
+
+	/*only for shopping cart columns*/
+	.one_item .col-1of4, #total_price .col-1of4 , #make_payment .col-1of4{
+
+		width: 25%;
+
+	}
+
+
+	#company_info img{
+
+		margin: 2.7rem auto;
+		height:auto;
+		width:90%;
+	}
+
+	.b-col-1of3, .b-col-1of1{ 
+
+		margin: 0; 
+		border-right: none;
+	}
+
+
+	.b-col-1of3:first-of-type{ 
+
+		margin: 0; 
+		border-bottom: 0.2rem double rgba(191,172,151,0.4); 
+		border-top: 0.2rem double rgba(191,172,151,0.4); 
+  		padding-bottom:1rem;
+	
+	}
+
+	/*heading*/
+
+	.title{
+		margin: 1.5rem 0;
+	}
+
+	.make_payment .col-1of4{
+
+		width:50%;
+
+	}
+
+	/*shopping cart*/
+	#cart_wrapper{
+
+	width: 100%;
+	margin:0 auto;
+}
+
 
 
 }/*end of the settings when the screen is smaller than 730px*/
@@ -223,36 +348,42 @@
 @media (max-width: 460px){
 
 
-	.col-1of3{
 
-		width: 100%;
+	.category{
 
+		border-bottom: 0.2rem double rgba(191,172,151,0.4); 
+  		padding-bottom:2rem;
 	}
 
-	.col-1of4{
-
-		width: 100%;
-
-	}
-
-
-	.one_item .col-1of4{
-		width: 50%;
+	.category:last-of-type{
 		
+		
+	}
+
+	.category_wrap .col-1of4{
+		padding:0;
+	}
+
+	/*grids*/
+
+	.col-1of3, .b-col-1of3, .col-1of4, .col-3of4{
+
+		width: 100%;
 
 	}
 
-
-	.col-2of4{
+	.col-2of4, .b-col-1of2{
 
 		width: 50%;
 
 	}
 
-	.image_banner{
+	#floral_banner, #home_banner, #contact_banner,.image_banner, #menu_banner, #detail_banner, #payment_banner, #shopping_banner{
 			
 		height: 15rem;
-		width:100%;		
+		width:100%;
+		background-size: 700px;	
+		background-position: 70% 25%;
 	}
 
 
@@ -260,6 +391,7 @@
 	{
 		max-width: 100%;
 		margin:auto;
+		padding:5%;
 	}
 
 	.product_image img{
@@ -268,4 +400,46 @@
 		max-height: 100%;
 		margin: auto;
 	}
+
+	.sidebyside .title{
+		width:100%;
+	}
+
+
+	/*only for shopping cart columns*/
+	.one_item .col-1of4, #total_price .col-1of4, #make_payment .col-1of4{
+
+		width: 50%;
+
+	}
+
+
+	.b-col-1of3, .b-col-1of1{ 
+
+		margin: 0; 
+		border-bottom: 0.2rem double rgba(191,172,151,0.4); 
+  		padding-bottom:1rem;
+	}
+
+	.b-col-1of3:first-of-type{ 
+
+		border-bottom: none; 
+  		padding-bottom:0 ;
+	
+	}
+
+	/*shopping cart*/
+
+	input[type=checkbox]{
+
+		float:right;
+	}
+
+
+	#footer{
+
+		max-width: 100%;
+		
+	}
+
 }/*end of the settings when the screen is smaller than 320px*/

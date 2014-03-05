@@ -5,6 +5,7 @@
 	<head>
 
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
@@ -27,14 +28,14 @@
 					<!-- beginning of the 4 navigation items -->
 					<div class="nav_col">
 						<div id="home">
-							<a class="button"href="home.html">home</a>
+							<a class="button" href="home.html">home</a>
 						</div>
 					</div>
 
 					<div class="nav_col">
 						<div id="menu">
 							<ul>
-								<li><a class="button"href="category_menu.html">menu</a>
+								<li><a class="button" href="category_menu.html">menu</a>
 							
 									<ul class="categories_item">
 										<li><a href="product_menu.html">new arrivals</a></li>
@@ -55,13 +56,13 @@
 
 					<div class="nav_col">
 						<div id="contact_us">
-							<a class="button"href="contact_us.html">contact us</a>
+							<a class="button" href="contact_us.html">contact us</a>
 						</div>
 					</div>	
 
 					<div class="nav_col">
 						<div id="shopping_cart">
-							<a class="button"href="shopping_cart.html">shopping cart</a>
+							<a class="button" href="shopping_cart.html">shopping cart</a>
 						</div>
 					</div>
 
@@ -69,7 +70,7 @@
 				</nav> <!--  end of nav grid class-->
 
 				<div class="image_banner">
-					<div id="payment_img">
+					<div id="payment_banner">
 					<!-- full width image -->
 					</div>
 				</div>
@@ -87,16 +88,16 @@
 
 					<div id="purchase">
 
-						<h2>PURCHASING ITEMS</h2>
-						<div class="one_item">
+						<h2 class="title">PURCHASING ITEMS</h2>
 
-					<div class="col-1of4">
+					<div class="one_item">
 
-							<img src="http://placehold.it/400X400" width="200" height="200"/>
+						<div class="col-1of4">
+
+							<img src="img/cakes/cake5.png" alt="cake" width="200" height="200"/>
 						
 					
-					</div><!-- ending col 1 of 4 -->
-
+						</div><!-- ending col 1 of 4 -->
 
 					<div class="col-2of4">
 
@@ -130,13 +131,13 @@
 						
 
 				</div><!-- ending col 1 of 1 -->
-
+				<div class="sidebyside">
 
 				<div class="col-1of2">
 
 					<div id="company_feedback">
 
-						<h2>YOUR DEATILS</h2>	
+						<h2 class="title">YOUR DEATILS</h2>	
 
 						<form method="post" action="home.html" id="your_details">
 
@@ -165,22 +166,27 @@
 
 					<div id="company_feedback">
 
-						<h2>CARD INFORMATION</h2>
+						<h2 class="title">CARD INFORMATION</h2>
 					
 
 							<label for="form-name">Card Number:</label>
 						    <input type="text" id="form-name" name="form-name" placeholder="4300 2560 3450 2200">
 
-						    <label for="form-name">Security Code:</label><input type="password" name="pwd" placeholder="***"><br>
+						    
+						    <label for="form-name">Card Type:</label>
 
 						    <input type="radio" name="card" value="visa">VISA 
-							<input type="radio" name="card" value="master">Mastercard<br>
+							<input type="radio" name="card" value="master">Mastercard
+
+							<label for="form-name">Security Code:</label><input type="password" name="pwd" placeholder="***">
+
 
 							<label for="form-name">Date od Expiry:</label><input type="text" name="date" placeholder="02/19">
 
 							<form method="post" action="shopping_cart.html" id="comments">
-						   <input type="submit" value="RETURN TO SHOPPING CART">
-						  </form>
+						   	<input type="submit" value="RETURN TO CART">
+
+						  
 
 						<form method="post" action="home.html" id="comments">
 						   <input type="submit" value="CONFIRM PAYMENT">
@@ -192,6 +198,7 @@
 				</div><!-- ending col 1 of 2 -->
 
 
+				</div><!-- end of sidebyside -->
 				
 			</nav> <!-- end of grid -->
 

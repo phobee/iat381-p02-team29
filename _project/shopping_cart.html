@@ -5,6 +5,7 @@
 	<head>
 
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
@@ -28,14 +29,14 @@
 					<!-- beginning of the 4 navigation items -->
 					<div class="nav_col">
 						<div id="home">
-							<a class="button"href="home.html">home</a>
+							<a class="button" href="home.html">home</a>
 						</div>
 					</div>
 
 					<div class="nav_col">
 						<div id="menu">
 							<ul>
-								<li><a class="button"href="category_menu.html">menu</a>
+								<li><a class="button" href="category_menu.html">menu</a>
 							
 									<ul class="categories_item">
 										<li><a href="product_menu.html">new arrivals</a></li>
@@ -56,13 +57,13 @@
 
 					<div class="nav_col">
 						<div id="contact_us">
-							<a class="button"href="contact_us.html">contact us</a>
+							<a class="button" href="contact_us.html">contact us</a>
 						</div>
 					</div>	
 
 					<div class="nav_col">
 						<div id="shopping_cart">
-							<a class="button"href="shopping_cart.html">shopping cart</a>
+							<a class="button" href="shopping_cart.html">shopping cart</a>
 						</div>
 					</div>
 
@@ -70,7 +71,7 @@
 				</nav> <!--  end of nav grid class-->
 
 				<div class="image_banner">
-					<div id="shopping_cart_img">
+					<div id="shopping_banner">
 					<!-- full width image -->
 					</div>
 				</div>
@@ -84,13 +85,18 @@
 			
 			<nav class="grid">
 
-				<h2>YOUR SHOPPING CART</h2>
+				<h2 class="title">YOUR SHOPPING CART</h2>
+
+				<div id="cart_wrapper">
 
 				<div class="one_item">
 
 					<div class="col-1of4">
 
-							<img src="http://placehold.it/400X400" width="200" height="200"/>
+
+
+
+						<img src="img/cakes/cake5.png" alt="cake" width="200" height="200"/>
 						
 					
 					</div><!-- ending col 1 of 4 -->
@@ -100,58 +106,13 @@
 
 						<div class="shop_item_info">
 
-							<p>
-								info
-							</p>
-						</div> <!-- shop_item_info -->
-							
-					
-					</div><!-- ending col 1 of 4 -->
 
-
-
-					<div class="col-1of4">
-
-						<div class="shop_item_quantity">
-
-							<p>
-								quantity & price
-							</p>
-						</div> <!-- shop_item_quantity -->
-							
-					
-					</div><!-- ending col 1 of 4 -->
-
-				</div> <!-- end of one item-->
-
-
-
-
-
-
-				<div class="one_item">
-
-
-					<div class="col-1of4">
-
-						<div class="shop_item_img">
-
-
-							<img src="http://placehold.it/400X400" width="200" height="200"/>
-						</div> <!-- shop_item_img -->
-							
-					
-					</div><!-- ending col 1 of 4 -->
-
-
-
-					<div class="col-2of4">
-
-						<div class="shop_item_info">
 
 							<p>
 								info
 							</p>
+
+							<input id="box" class="css-checkbox" type="checkbox"/>
 						</div> <!-- shop_item_info -->
 							
 					
@@ -180,7 +141,10 @@
 					<div class="col-1of4">
 
 						<div class="shop_item_img">
-							<img src="http://placehold.it/400X400" width="200" height="200"/>
+
+							<img src="img/cakes/top.png" alt="bride and broon toppers" width="150" height="200">
+
+
 						</div> <!-- shop_item_img -->
 							
 					
@@ -195,6 +159,8 @@
 							<p>
 								info
 							</p>
+
+							<input id="box" class="css-checkbox" type="checkbox"/>
 						</div> <!-- shop_item_info -->
 							
 					
@@ -216,26 +182,76 @@
 
 				</div> <!-- end of one item-->
 
-				<div id="total_price">
+
+				<div class="one_item">
+
+
+					<div class="col-1of4">
+
+						<div class="shop_item_img">
+							<img src="img/cakes/top2.png" alt="bride and broom toppers" width="150" height="200">
+						</div> <!-- shop_item_img -->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+
+
+					<div class="col-2of4">
+
+						<div class="shop_item_info">
+
+							<p>
+								info
+							</p>
+
+							<input id="box" class="css-checkbox" type="checkbox"/>
+						</div> <!-- shop_item_info -->
+							
+					
+					</div><!-- ending col 2 of 4 -->
+
+
+
+					<div class="col-1of4">
+
+						<div class="shop_item_quantity">
+
+							<p>
+								quantity & price
+							</p>
+						</div> <!-- shop_item_quantity -->
+							
+					
+					</div><!-- ending col 1 of 4 -->
+
+				</div> <!-- end of one item-->
+
+			</div>
+
+
+				<div class="make_payment">
+
 					<div class="col-1of4">
 
 
 						<p>Total : </p>
 						
-					</div>
+					</div><!-- ending col 1 of 4 -->
 
-				</div>
+				</div><!-- end of make_payment -->
 
-				<div id="make_payment">
+				<div class="make_payment">
+
 					<div class="col-1of4">
 
-						<form action="payment.html"><input type="submit" value="PROCEED TO CHECKOUT"></form> 
+						<form action="payment.html">
+						  
+							<input type="submit" value="PROCEED TO CHECKOUT">
 						
-					</div>
+					</div><!-- ending col 1 of 4 -->
 
-				</div>
-
-
+				</div><!-- end of make_payment -->
 				
 			</nav> <!-- end of grid -->
 
