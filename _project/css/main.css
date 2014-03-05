@@ -247,18 +247,18 @@ nav ul li:hover > ul {
 }
 
 
-#home_wrapper .col-1of2{
+/*#home_wrapper .col-1of2{
 
 	width:50%;
 	height: auto;
 	margin:0 auto;
-}
+}*/
 
-#home_wrapper{
+/*#home_wrapper{
 
 	width:70%;
 	margin:0 auto;
-}
+}*/
 
 .sidebyside img{
 	float:left;
@@ -551,6 +551,27 @@ input[type=submit]{
 
 	border-right: none; 
 }
+
+
+
+/* home page*/
+
+.events li {
+	padding-left: 1rem;
+	margin-bottom: 1rem;
+	list-style: circle;
+}
+
+#recent_events, #luck_browse{
+
+	margin-top: 2rem;
+}
+
+#luck_browse h2 {
+	margin-bottom: -0.3rem;
+}
+
+
 
 /*-------------  END OF BODY CONTENT WRAP ------------- */
 
