@@ -70,7 +70,7 @@
 				</nav> <!--  end of nav grid class-->
 
 				<div class="image_banner">
-					<div id="payment_img">
+					<div id="payment_banner">
 					<!-- full width image -->
 					</div>
 				</div>
@@ -88,16 +88,16 @@
 
 					<div id="purchase">
 
-						<h2>PURCHASING ITEMS</h2>
-						<div class="one_item">
+						<h2 class="title">PURCHASING ITEMS</h2>
 
-					<div class="col-1of4">
+					<div class="one_item">
 
-							<img src="http://placehold.it/400X400" width="200" height="200"/>
+						<div class="col-1of4">
+
+							<img src="img/cakes/cake5.png" alt="cake" width="200" height="200"/>
 						
 					
-					</div><!-- ending col 1 of 4 -->
-
+						</div><!-- ending col 1 of 4 -->
 
 					<div class="col-2of4">
 
@@ -131,27 +131,27 @@
 						
 
 				</div><!-- ending col 1 of 1 -->
-
+				<div class="sidebyside">
 
 				<div class="col-1of2">
 
-					<div id="company_feedback">
+					<div class="company_feedback">
 
-						<h2>YOUR DEATILS</h2>	
+						<h2 class="title">YOUR DEATILS</h2>	
 
 						<form method="post" action="home.html" id="your_details">
 
-							<label for="form-name">Bride's Name:</label>
-						    <input type="text" id="form-name" name="form-name" placeholder="Jane Doe">
+							<label >Bride's Name:</label>
+						    <input type="text" name="form-name" placeholder="Jane Doe">
 
-						    <label for="form-subject">Broom's Name:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="Danny Blur">
+						    <label >Broom's Name:</label>
+						    <input type="text" name="form-subject" placeholder="Danny Blur">
 
-						    <label for="form-subject">Wedding date &amp; time of delivery:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="02/29/2013 8:00p.m">
+						    <label >Wedding date &amp; time of delivery:</label>
+						    <input type="text" name="form-subject" placeholder="02/29/2013 8:00p.m">
 
-						    <label for="form-subject">Address:</label>
-						    <input type="text" id="form-subject" name="form-subject" placeholder="8888 University Dr,Burnaby, V5A 1S6">
+						    <label >Address:</label>
+						    <input type="text" name="form-subject" placeholder="8888 University Dr,Burnaby, V5A 1S6">
 						      
 						    <label for="form-comment">Additional Information:</label>
 						    <textarea id="form-comment" name="form-comment" placeholder="Please place additional information here"></textarea>
@@ -164,28 +164,47 @@
 
 				<div class="col-1of2">
 
-					<div id="company_feedback">
+					<div class="company_feedback">
 
-						<h2>CARD INFORMATION</h2>
+						<h2 class="title">CARD INFORMATION</h2>
 					
 
 							<label for="form-name">Card Number:</label>
 						    <input type="text" id="form-name" name="form-name" placeholder="4300 2560 3450 2200">
 
-						    <label for="form-name">Security Code:</label><input type="password" name="pwd" placeholder="***"><br>
+						<div id="card_form">
+						    
+						<div class="col-1of4">
+						    <label for="form-name">Card Type:</label>
+						    
+						    <input type="radio" name="card" value="visa">VISA <br>
+							<input type="radio" name="card" value="master">Mastercard
+						</div>
 
-						    <input type="radio" name="card" value="visa">VISA 
-							<input type="radio" name="card" value="master">Mastercard<br>
+						<div class="col-3of4">
 
-							<label for="form-name">Date od Expiry:</label><input type="text" name="date" placeholder="02/19">
+							<div class="col-1of1">
 
-							<form method="post" action="shopping_cart.html" id="comments">
-						   <input type="submit" value="RETURN TO SHOPPING CART">
-						  </form>
+							<label for="form-name">Date of Expiry:</label><input type="text" name="date" placeholder="02/19">
 
-						<form method="post" action="home.html" id="comments">
+							</div>
+
+							<div class="col-1of1">
+							<label for="form-name">Security Code:</label><input type="text" name="pwd" placeholder="***">
+
+							</div>
+						</div>
+
+
+						</div>
+						  
+
+						<form method="post" action="home.html">
 						   <input type="submit" value="CONFIRM PAYMENT">
+						</form>
 
+						<form method="post" action="shopping_cart.html" id="comments">
+						   	<input type="submit" value="RETURN TO CART">
 						</form>
 
 					</div> <!-- ending company feedback -->
@@ -193,7 +212,8 @@
 				</div><!-- ending col 1 of 2 -->
 
 
-				
+				</div><!-- end of sidebyside -->
+
 			</nav> <!-- end of grid -->
 
 			
