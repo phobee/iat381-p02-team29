@@ -459,6 +459,24 @@ input[type=submit]{
 	margin:2rem 0rem;
 }
 
+.css-checkbox {
+
+	float: left;
+	margin-right: 1rem;
+}
+
+.select {
+
+	width:100%;
+}
+
+.shop_amount {
+
+	float: left;
+	margin-right: 0.5rem;
+	width: 3rem;
+}
+
 
 .suggestion img{
 

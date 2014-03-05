@@ -104,11 +104,11 @@
 
 								<div class="shop_item_info">
 
-									<p>
-										info
-									</p>
 
 									<input class="css-checkbox" type="checkbox"/>
+									<h3>Summer Garden</h3>
+									<p>Tiers in 6", 8", 12"</p>
+									<!-- <p>Decorated with orange rose, white marguerite, and swirls</p> -->
 								</div> <!-- shop_item_info -->
 					
 							</div><!-- ending col 2 of 4 -->
@@ -122,6 +122,12 @@
 									<p>
 										quantity & price
 									</p>
+
+									<select class="select">
+									  <option value="1_tier">1 tier $20</option>
+									  <option value="2_tier">2 tiers $45</option>
+									  <option value="3_tier">3 tiers $70</option>
+									</select>
 								</div> <!-- shop_item_quantity -->
 							
 					
@@ -151,11 +157,10 @@
 
 								<div class="shop_item_info">
 
-									<p>
-										info
-									</p>
-
 									<input class="css-checkbox" type="checkbox"/>
+									<h3>Choco Lover Topper</h3>
+									<p>Standard size</p>
+
 								</div> <!-- shop_item_info -->
 					
 							</div><!-- ending col 2 of 4 -->
@@ -167,6 +172,10 @@
 									<p>
 										quantity & price
 									</p>
+
+									<input class="shop_amount" type="text" placeholder="1"/>
+									<p>x $18</p>
+
 								</div> <!-- shop_item_quantity -->
 							
 					
@@ -193,14 +202,11 @@
 
 								<div class="shop_item_info">
 
-									<p>
-										info
-									</p>
-
 									<input class="css-checkbox" type="checkbox"/>
-								</div> <!-- shop_item_info -->
-									
-							
+									<h3>Elegant Lover Topper</h3>
+									<p>Standard size</p>
+									</div> <!-- shop_item_info -->
+																
 							</div><!-- ending col 2 of 4 -->
 
 
@@ -212,6 +218,11 @@
 									<p>
 										quantity & price
 									</p>
+
+									<input class="shop_amount" type="text" placeholder="1"/>
+
+									<p>x $12</p>
+
 								</div> <!-- shop_item_quantity -->
 									
 							
@@ -227,7 +238,8 @@
 					<div class="col-1of4">
 
 
-						<p>Total : </p>
+						<label class="label_total">Total : </label>
+						<input id="total_output" name="total_output" placeholder="170">
 						
 					</div><!-- ending col 1 of 4 -->
 
