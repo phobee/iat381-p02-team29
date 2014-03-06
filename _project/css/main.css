@@ -19,7 +19,7 @@ h1 {
 
 h2 {
 
-	font-size: 2rem; 
+	font-size: 200%; 
 	color:#BFAC97; 
 	margin:0;
 }
@@ -137,6 +137,7 @@ nav ul li:hover > ul {
 }
 
 .categories_item{
+
 	padding:0;
 	margin:0;
 	background-color: rgba(209,237,233,0.9);
@@ -236,16 +237,30 @@ nav ul li:hover > ul {
 /* ------------- BODY CONTENT WRAP ------------- */
 
 /* home */
-#about_us p{
-
-	font-size: 1.5rem;
-}
 
 .sidebyside .title{
 
 	width:90%;
 }
 
+
+#contact_link{
+
+	font-weight: bold; 
+	text-decoration: none; 
+	color:rgba(191,172,151,0.8);
+
+
+}
+
+#contact_link:hover{
+
+	
+
+	color: #BFAC97;
+
+
+}
 
 /*#home_wrapper .col-1of2{
 
@@ -268,7 +283,7 @@ nav ul li:hover > ul {
 /*contact us*/
 
 .company_feedback h2, #company_info h2{
-	padding-bottom: 2rem;
+	padding-bottom: 0.5rem;
 }
 
 #company_info h3{
@@ -323,7 +338,12 @@ input[type=submit]{
 	margin-top: 0.7rem;
 	font-family: 'Gafata', sans-serif;
 	font-size: 0.9rem;
+	-webkit-transition: all 0.5s;
 	
+}
+
+input[type=submit]:hover{
+	background-color: rgba(171,152,131,1);
 }
 
 .company_feedback form textarea {
@@ -367,8 +387,16 @@ input[type=submit]{
 	margin-top: 0.7rem;
 	font-family: 'Gafata', sans-serif;
 	font-size: 0.9rem;
+	-webkit-transition: all 0.5s;
 
 }
+
+.make_payment  input[type=submit]:hover{
+	background-color: rgba(171,152,131,1);
+}
+
+
+
 
 #cart_wrapper{
 
@@ -392,8 +420,8 @@ input[type=submit]{
 	display:block;
 	width:100%;
 	clear:both;
-	padding-bottom: 1rem;
-	margin-bottom: 3rem;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
 	border-bottom: rgba(191,172,151,0.5) double 0.2rem;
 }
 
@@ -414,10 +442,26 @@ input[type=submit]{
 
 }
 
-.category a:link, .category a:visited { 
+.category a:link, .category a:visited{ 
 
 	font-weight: bold; 
 	font-size: 1.5rem;
+	text-decoration: none; 
+	color: #BFAC97; 
+
+}
+
+
+.row-1of2{
+
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.row-1of2 a:link, .row-1of2 a:visited { 
+
+	font-weight: bold; 
+	font-size: 1.3rem;
 	text-decoration: none; 
 	color: #BFAC97; 
 
@@ -459,23 +503,8 @@ input[type=submit]{
 	margin:2rem 0rem;
 }
 
-.css-checkbox {
 
-	float: left;
-	margin-right: 1rem;
-}
 
-.select {
-
-	width:100%;
-}
-
-.shop_amount {
-
-	float: left;
-	margin-right: 0.5rem;
-	width: 3rem;
-}
 
 
 .suggestion img{
@@ -487,6 +516,31 @@ input[type=submit]{
 	
 }
 
+
+/*shopping cart*/
+input[type='checkbox'] {
+
+	float: left;
+	margin-right: 1rem;
+}
+
+.select {
+
+	width:100%;
+}
+.shop_item_quantity p:first-of-type{
+	color: #BFAC97;
+}
+
+
+.shop_amount {
+
+	float: left;
+	margin-right: 0.5rem;
+	width: 3rem;
+}
+
+/*grid*/
 .b-col-1of2, .b-col-1of3{
 
 	text-align: center;
@@ -559,19 +613,9 @@ input[type=submit]{
 .events li {
 	padding-left: 1rem;
 	margin-bottom: 1rem;
-	list-style: circle;
+
+	
 }
-
-#recent_events, #luck_browse{
-
-	margin-top: 2rem;
-}
-
-#luck_browse h2 {
-	margin-bottom: -0.3rem;
-}
-
-
 
 /*-------------  END OF BODY CONTENT WRAP ------------- */
 
