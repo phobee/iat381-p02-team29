@@ -167,15 +167,49 @@
 	padding:0;
 }
 
+.p-col-1of4 {
+	height: auto;
+	width: 25%;
 
+}
 
+.company_feedback {
+	height: auto;
+	overflow: auto;
+}
 
+}
+
+.item {
+	height: auto;
+	overflow: auto;
+}
+
+.p-col-3of4 {
+	height: auto;
+	width: 75%;
+
+}
+
+.c-col-1of2 {
+
+	width: 50%;
+}
+
+.col-2of4 {
+	width: 50%;
+}
 
 
 *, *:after, *:before{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+@media (max-width: 1124px){
+
+
 }
 
 
@@ -433,8 +467,6 @@
 
 
 
-
-
 }/*end of the settings when the screen is smaller than 730px*/
 
 
@@ -442,7 +474,7 @@
 
 
 /*when the screen is smaller then 325px*/
-@media (max-width: 460px){
+@media (max-width: 488px){
 
 
 

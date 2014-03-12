@@ -288,12 +288,13 @@ nav ul li:hover > ul {
 
 #contact_link:hover{
 
+	
+
 	color: #BFAC97;
 	color:rgba(191,172,151,0.8);
 
 
 }
-
 
 /*#home_wrapper .col-1of2{
 
@@ -350,7 +351,7 @@ nav ul li:hover > ul {
 
 
 .company_feedback input[type=text] {
-	width:20rem;
+	width:90%;
 	height:2rem;
 	border-radius: 0.3rem;
 	font-family: 'Gafata', sans-serif;
@@ -358,14 +359,14 @@ nav ul li:hover > ul {
 }
 
 
-#card_form .col-1of4, #card_form .col-3of4{
-	margin-top: 1rem;
-}
+/*#card_form .col-1of4, #card_form .col-3of4{
+	//margin-top: 1rem;
+}*/
 
 input[type=submit]{
 
 	background-color: rgba(191,172,151,0.8);
-	width: 10rem;
+	width: 90%;
 	height:3rem;
 	border-radius: 0.3rem;
 	margin-top: 0.7rem;
@@ -381,7 +382,7 @@ input[type=submit]:hover{
 
 .company_feedback form textarea {
 	display: block;
-	width: 20rem;
+	width: 90%;
 	height: 8rem;
 	clear: right;
 	border-radius: 0.3rem;
@@ -639,15 +640,26 @@ input[type='checkbox'] {
 	border-right: none; 
 }
 
+.item {
 
+}
 
-/* home page*/
+/*.p-col-1of4:first-of-type h6{
+	margin-top: 0;
+}*/
 
-.events li {
-	
-	margin-bottom: 1rem;
+.p-col-1of4 p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
 
-	
+.p-col-3of4 p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.n-col-1of2:first-of-type label{
+	padding-right: 0.5rem;
 }
 
 #best_sell p{
@@ -660,10 +672,14 @@ input[type='checkbox'] {
 }
 
 
+/* home page*/
 
+.events li {
+	
+	margin-bottom: 1rem;
 
-
-
+	
+}
 
 /*-------------  END OF BODY CONTENT WRAP ------------- */
 
