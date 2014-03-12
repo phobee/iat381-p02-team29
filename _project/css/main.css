@@ -662,6 +662,37 @@ input[type='checkbox'] {
 	padding-right: 0.5rem;
 }
 
+.c-col-1of4 {
+	width: 25%;
+}
+
+#item {
+	width: 85%;
+	border-bottom: solid 1px black;
+	padding-bottom: 1rem;
+}
+
+.c-col-1of4 img {
+
+	width: 64%;
+	float:right;
+}
+
+/*#itemwrap{
+
+	border: black double 0.2rem;
+}*/
+
+#amount {
+
+	width: 85%;
+}
+
+#amount h6{
+
+	margin-top: 0;
+}
+
 #best_sell p{
 	margin: 0;
 	display: inline-block;

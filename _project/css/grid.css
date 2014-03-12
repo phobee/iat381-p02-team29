@@ -167,6 +167,14 @@
 	padding:0;
 }
 
+
+/* payment */
+
+#amount {
+	height: auto;
+	overflow: auto;
+}
+
 .p-col-1of4 {
 	height: auto;
 	width: 25%;
@@ -178,9 +186,8 @@
 	overflow: auto;
 }
 
-}
 
-.item {
+#item {
 	height: auto;
 	overflow: auto;
 }
