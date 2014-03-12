@@ -415,6 +415,7 @@
 	.col-7of10
 	{
 		width:100%;
+		padding-right: 0;
 	}
 
 	.row-1of2{
@@ -425,6 +426,12 @@
 		float:left;
 
 	}
+
+	input[type=submit]{
+		width:100%;
+	}
+
+
 
 
 
