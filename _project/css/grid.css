@@ -139,10 +139,15 @@
 
 #body_content_wrap{
 
-	max-width: 80%;
+	max-width: 70%;
 	margin: 0 auto;
-	background:rgba(255,247,240,0.7);
+	/*background:rgba(232,230,203,0.5);*/
+	/*background:rgba(222,212,199,0.4);*/
+	background:rgba(255,247,240,0.9);
+
 	padding:5% ;
+	border-left:rgba(191,172,151,0.4) solid 0.1rem; 
+	border-right:rgba(191,172,151,0.4)solid 0.1rem; 
 }
 
 
@@ -178,7 +183,7 @@
 @media (max-width: 970px){
 
 	/*remove logo*/
-	#logo{
+	#logo, #acct{
 
 		display:none;
 	}
@@ -200,7 +205,7 @@
 	/*keep color the same*/
 	.nav_col:hover,.nav_col:focus,.nav_col:active {
 
-  		background-color: rgba(147,216,213,0.5);
+  		background-color: rgba(229,198,198,0.5);
 		border-radius: 0;
 	
 	}	
@@ -214,7 +219,7 @@
 		width: 100%;
 		float:none;
 		margin: 0;
-		border-bottom: rgba(147,216,213,0.5) double 0.2rem;	
+		border-bottom: rgba(229,198,198,0.5) double 0.2rem;	
 
 	}
 
@@ -222,7 +227,7 @@
 	/*create an border-bottom to separate the navigation bar from the image below*/
 	.nav_col{
 		
-		background-color: rgba(147,216,213,0.5);
+		background-color: rgba(229,198,198,0.5);
 		width: 25%;
 		display: inline-block;	
 		float:left;

@@ -20,7 +20,8 @@ h1 {
 h2 {
 
 	font-size: 200%; 
-	color:#BFAC97; 
+	/*color:#BFAC97; */
+	color:#BFA1A3; 
 	margin:0;
 }
  
@@ -58,15 +59,46 @@ ul{
 
 	height:auto;
 	width:60%;
-	padding-top:2rem;
+	
 
+}
+
+#acct a{
+	width:33.3%;
+	color:#DEB9BA;
+	display: inline-block;
+	float:left;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+#acct a:hover{
+	color:#BFA1A3;
+	
+
+}
+#acct ul{
+	width:35%;
+	margin: 0;
+	float:right;
+	display: block;
+	clear: both;
+	padding-top:1.2rem;
+	padding-right: 0.5rem;
+
+}
+
+#acct {
+	height: auto;
+	overflow: auto;
 }
 
 .top_grid {
 
 	font-size: 1.1rem;
 	line-height: 3rem;
-	margin-top:6rem;
+	margin-top:2.3rem;
 	text-align: center;
 
 }
@@ -77,8 +109,9 @@ ul{
 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #91D8D5;
-	background-color: rgba(144,216,213,0.2);
+	/*color: #91D8D5;*/
+	color:#FFFFFF;
+	background-color: rgba(191,172,151,0.6);
 	border-radius: 0.3rem;
 	border:white double 0.3rem;
 
@@ -86,7 +119,7 @@ ul{
 
 .nav_col:hover,.nav_col:focus,.nav_col:active {
 
-  	background-color: rgba(191,172,151,0.3);
+  	background-color: rgba(191,172,151,1);
 	border-radius: 0.3rem;
 	color:#FFFFFF;
 	
@@ -140,7 +173,8 @@ nav ul li:hover > ul {
 
 	padding:0;
 	margin:0;
-	background-color: rgba(209,237,233,0.9);
+	background-color: rgba(191,172,151,0.9);
+	border:white double 0.3rem;
 	border-radius: 0.2rem;
 	
 }
@@ -148,14 +182,14 @@ nav ul li:hover > ul {
 .categories_item a:link, .categories_item a:visited { 
 	
 	text-decoration: none; 
-	color: #BFAC97; 
+	color: white; 
 
 }
 
 .categories_item a:hover, .categories_item a:focus, .categories_item a:active {
 
 	font-weight: bold; 
-	background-color:rgba(255,255,255,0.8);
+	background-color: rgba(191,161,161,0.5);
 
 }
 
@@ -248,19 +282,18 @@ nav ul li:hover > ul {
 
 	font-weight: bold; 
 	text-decoration: none; 
-	color:rgba(191,172,151,0.8);
-
+	color: #BFAC97;
 
 }
 
 #contact_link:hover{
 
-	
-
 	color: #BFAC97;
+	color:rgba(191,172,151,0.8);
 
 
 }
+
 
 /*#home_wrapper .col-1of2{
 
@@ -445,7 +478,7 @@ input[type=submit]:hover{
 .category a:link, .category a:visited{ 
 
 	font-weight: bold; 
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	text-decoration: none; 
 	color: #BFAC97; 
 
@@ -461,7 +494,7 @@ input[type=submit]:hover{
 .row-1of2 a:link, .row-1of2 a:visited { 
 
 	font-weight: bold; 
-	font-size: 1.3rem;
+	font-size: 90%;
 	text-decoration: none; 
 	color: #BFAC97; 
 
@@ -611,11 +644,26 @@ input[type='checkbox'] {
 /* home page*/
 
 .events li {
-	padding-left: 1rem;
+	
 	margin-bottom: 1rem;
 
 	
 }
+
+#best_sell p{
+	margin: 0;
+	display: inline-block;
+	float:left;
+	font-size: 2rem;
+	color:#BFAC97;
+	
+}
+
+
+
+
+
+
 
 /*-------------  END OF BODY CONTENT WRAP ------------- */
 
@@ -629,6 +677,7 @@ input[type='checkbox'] {
 	max-width: 100%;
 	margin: 0 auto;
 	line-height: 0.8rem;
+
 	background-color: rgba(191,172,151,0.5);
 
 }
