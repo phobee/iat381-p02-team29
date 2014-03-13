@@ -706,7 +706,12 @@ input[type='checkbox'] {
 	
 }
 
+.name-col1of2 {
+	float:left;
+	width: 47.5%;
+	margin-bottom: 0.5rem;
 
+}
 
 .select {
 
