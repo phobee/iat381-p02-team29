@@ -398,6 +398,7 @@
 	}
 
 
+
 	#company_info img{
 		margin: 1rem 0;
 		max-width: 100%;
@@ -557,6 +558,11 @@
 		width: 50%;
 
 	}
+
+/*	.make_payment .bill  input {
+
+		width: 100%;
+	}*/
 
 
 	.b-col-1of3, .b-col-1of1{ 
