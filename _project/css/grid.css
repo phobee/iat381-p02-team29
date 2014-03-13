@@ -553,7 +553,7 @@
 
 
 	/*only for shopping cart columns*/
-	.one_item .col-1of4, #total_price .col-1of4, #make_payment .col-1of4{
+	.one_item .col-1of4, #total_price .col-1of4{
 
 		width: 50%;
 
@@ -589,7 +589,7 @@
 
 	.make_payment .col-1of4{
 
-		width:70%;
+		width:100%;
 
 	}
 
