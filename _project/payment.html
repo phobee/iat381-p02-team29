@@ -82,6 +82,7 @@
 				<div class="image_banner">
 					<div id="payment_banner">
 					<!-- full width image -->
+						<img id="watermark" src="img/logo.png" alt="logo" width="230" height="200">
 					</div>
 				</div>
 			
@@ -101,7 +102,7 @@
 
 						<h2 class="title">YOUR DEATILS</h2>	
 
-						<form method="post" action="home.html" id="your_details">
+						<form method="post" action="home.html">
 
 							<div class="name">
 								<div class="name-col1of2">
@@ -143,27 +144,26 @@
 							<div id="card_form">
 
 								
-								<form method="post" action="home.html" id="your_details">	
 
 									<div class="name">
 										<div class="name-col1of2">
-											<label >Frist Name:</label>
-										    <input type="text" id="form-name" name="form-name" placeholder="Jane">
+											<label >First Name:</label>
+										    <input type="text" name="form-name" placeholder="Jane">
 										</div>
 
 										<div class="name-col1of2">
 										    <label >Last Name:</label>
-										    <input type="text" id="form-name" name="form-name" placeholder="Doe">
+										    <input type="text" name="form-name" placeholder="Doe">
 										</div>
 
-									</div> <!--ending of name div -->
+									</div> <!--ending of "name"div -->
 
 									<label >Card Number:</label>
-								    <input type="text" id="form-name" name="form-name" placeholder="4300 2560 3450 2200">
+								    <input type="text" name="form-name" placeholder="4300 2560 3450 2200">
 
 								    <div class="card">
 
-									    <label class="card_label" for="form-name">Card Type:</label>
+									    <label class="card_label">Card Type:</label>
 
 										<div class="type">
 											<div class="c-col-1of4">
@@ -185,16 +185,16 @@
 											<input type="radio" name="card" value="paypal">
 											<img src="img/paypal.jpg" alt="logo" >
 											</div>
-										</div>
+										</div><!--ending of "type" div -->
 
-									</div>
+									</div><!--ending of "card" div -->
 
 									<div class="name">
 										<div class="name-col1of2">
 											<label >Date of Expiry:</label>
 										    
 											<div class="time">
-												<!-- <input type="text" name="date" placeholder="02/19"> -->
+
 												<select class="select">
 													<option value="2018">2018</option>
 													<option value="2017">2017</option>
@@ -218,63 +218,24 @@
 													<option value="01">01</option>
 												</select>
 											</div>
-
-										    <!-- <input type="text" name="date" placeholder="02/19"> -->
-										</div>
+										</div><!--ending of "name-col1of2" div -->
 
 										<div class="name-col1of2">
 										    <label >Security Code:</label>
 										    <input type="text" name="pwd" placeholder="***">
-										</div>
+										</div><!--ending of "name-col1of2" div -->
 
-									</div> <!--ending of name div -->
+									</div> <!--ending of "name" div -->
 
-								    
+									<form method="post" action="home.html">
+									   <input type="submit" value="CONFIRM PAYMENT">
+									</form>
 
-
-								    <form method="post" action="home.html">
-								   <input type="submit" value="CONFIRM PAYMENT">
-								</form>
-
-								<form method="post" action="shopping_cart.html" id="comments">
-								   	<input type="submit" value="RETURN TO CART">
-								</form>
-							
-
-								</form>
+									<form method="post" action="shopping_cart.html" id="comments">
+									   	<input type="submit" value="RETURN TO CART">
+									</form>
 								
-
-								<!-- <label for="form-name">Card Number:</label>
-						    	<input type="text" id="form-name" name="form-name" placeholder="4300 2560 3450 2200"> -->
-
-								
-
-
-
-
-								<!-- <div class="col-1of1">
-
-								<label for="form-name">Date of Expiry:</label><input type="text" name="date" placeholder="02/19">
-
-								</div> -->
-
-								<!-- <div class="col-1of1">
-								<label for="form-name">Security Code:</label><input type="text" name="pwd" placeholder="***">
-
-								</div> -->
-
-								
-
-							
 							</div>
-
-							
-
-
-						
-						  
-
-						
 
 						</div> <!-- ending of payment -->
 

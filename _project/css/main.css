@@ -1,9 +1,5 @@
 /* IAT 381 P02 website's stylesheet*/
 
-/*Color Palette : #91D8D5 , #BFAC97, #FFFFFF, #CCCCCC, #3D3D3D */
-
-
-
 body {
 
 	font-family: 'Gafata', sans-serif;
@@ -22,7 +18,6 @@ h1 {
 h2 {
 
 	font-size: 200%; 
-	/*color:#BFAC97; */
 	color:#BFA1A3; 
 	margin:0;
 }
@@ -65,6 +60,13 @@ ul{
 
 }
 
+
+#watermark{
+	display: none;
+	float:right;
+	margin-top: 8rem;
+}
+
 #acct a{
 	width:33.3%;
 	color:#DEB9BA;
@@ -105,13 +107,10 @@ ul{
 
 }
 
-
-
 .button:link, .button:visited { 
 
 	font-weight: bold; 
 	text-decoration: none; 
-	/*color: #91D8D5;*/
 	color:#FFFFFF;
 	background-color: rgba(191,172,151,0.6);
 	border-radius: 0.3rem;
@@ -280,7 +279,7 @@ nav ul li:hover > ul {
 }
 
 
-#contact_link{
+.link{
 
 	font-weight: bold; 
 	text-decoration: none; 
@@ -288,9 +287,7 @@ nav ul li:hover > ul {
 
 }
 
-#contact_link:hover{
-
-	
+.link:hover{
 
 	color: #BFAC97;
 	color:rgba(191,172,151,0.8);
@@ -298,23 +295,13 @@ nav ul li:hover > ul {
 
 }
 
-/*#home_wrapper .col-1of2{
-
-	width:50%;
-	height: auto;
-	margin:0 auto;
-}*/
-
-/*#home_wrapper{
-
-	width:70%;
-	margin:0 auto;
-}*/
-
 .sidebyside img{
 	float:left;
 }
 
+#emp{
+	color:red;
+}
 
 /*contact us*/
 
@@ -340,14 +327,12 @@ nav ul li:hover > ul {
 }
 
 
-
 /*forms*/
 
 .company_feedback label {
 
 	display: block;
 	clear: both;
-
 	margin: 0.5rem 0;
 }
 
@@ -365,10 +350,6 @@ nav ul li:hover > ul {
 	font-size: 1rem;
 }
 
-
-/*#card_form .col-1of4, #card_form .col-3of4{
-	//margin-top: 1rem;
-}*/
 
 input[type=submit]{
 
@@ -390,7 +371,7 @@ input[type=submit]:hover{
 .company_feedback form textarea {
 	display: block;
 	width: 100%;
-	height: 8rem;
+	height: 10rem;
 	clear: right;
 	border-radius: 0.3rem;
 	font-family: 'Gafata', sans-serif;
@@ -398,9 +379,9 @@ input[type=submit]:hover{
 }
 
 
+
+
 /* shopping cart */
-
-
 
 .one_item{
 	margin: 1rem 0;
@@ -419,11 +400,73 @@ input[type=submit]:hover{
 	width: 100%;
 }
 
+
+/*shopping cart total bill form*/
+.total_price .col-3of4, .make_payment .col-3of4{
+
+	width:75%;
+	
+}
+
 .total_price .col-1of4, .make_payment .col-1of4{
 
-	float:right;
-	clear:both;
+	width:25%;
 }
+
+
+
+.shop_item_quantity{
+
+	float:right;
+}
+
+.make_payment .bill{
+
+	width: 100%;
+	font-size: 150%;
+}
+
+
+
+.make_payment{
+	overflow: auto;
+	height: auto;
+	border-top: rgba(191,172,151,0.5) double 0.2rem;
+}
+
+
+.make_payment:last-of-type{
+	border-top: transparent;
+}
+
+
+
+td:nth-of-type(2){
+	float: right;
+}
+
+
+tr td{
+
+	padding-top: 1rem;
+	color:rgb(191,172,151);
+
+}
+
+tr:nth-of-type(2) td{
+
+	padding-top: 0;
+
+}
+
+tr:last-of-type td{
+
+	color:black;
+	font-weight: bolder;
+	padding-top: 1rem;
+
+}
+
 
 .make_payment input[type=submit]{
 
@@ -431,7 +474,6 @@ input[type=submit]:hover{
 	width: 100%;
 	height:3rem;
 	border-radius: 0.3rem;
-	/*margin-top: 0.7rem;*/
 	font-family: 'Gafata', sans-serif;
 	font-size: 0.9rem;
 	-webkit-transition: all 0.5s;
@@ -447,13 +489,7 @@ input[type=submit]:hover{
 	text-align: right;
 }
 
-/*.make_payment .bill tr {
-	width: 100%;
-	text-align: right;
-}
-
-*/
-
+/*end of shopping cart bill form*/
 
 #cart_wrapper{
 
@@ -533,7 +569,7 @@ input[type=submit]:hover{
 	padding:0 0 1rem 0;	
 }
 
-.category:hover, .category:focus, .category:active {
+.category:hover, .category:focus, .category:active, .b-col-1of2:hover {
 
 	background-color: rgba(191,172,151,0.1);
 	border-radius: 1rem;
@@ -545,6 +581,11 @@ input[type=submit]:hover{
 	padding: 0 0 3rem 0;
 }
 
+.category p{
+	font-size:1rem;
+	color:gray;
+	font-weight: bolder;
+}
 
 /*product details*/
 
@@ -559,9 +600,6 @@ input[type=submit]:hover{
 .product_info {
 	margin:2rem 0rem;
 }
-
-
-
 
 
 .suggestion img{
@@ -594,11 +632,7 @@ input[type='checkbox'] {
 	width: 3rem;
 }
 
-/*grid*/
-.b-col-1of2, .b-col-1of3{
-
-	text-align: center;
-}
+/*forms*/
 
 
 .product_feedback form label {
@@ -607,10 +641,6 @@ input[type='checkbox'] {
 	text-align: left;
 }
 
-/*.product_feedback form label:first-of-type{
-	
-	margin-top:0;
-}*/
 
 .product_feedback input[type=text]{
 	width:100%;
@@ -633,18 +663,19 @@ input[type='checkbox'] {
 }
 
 
+/*grids*/
+.b-col-1of2, .b-col-1of3{
+
+	text-align: center;
+}
+
+
+
 .b-col-1of1{
 
 	height:100%;
 
 }
-
-/*.b-col-1of3, .b-col-1of1{ 
-
-	margin: 3rem 0; 
-	border-right: 0.2rem double rgba(191,172,151,0.4); 
-
-}*/
 
 .b-col-1of3:nth-of-type(2) {
 
@@ -672,10 +703,6 @@ input[type='checkbox'] {
 
 }
 
-/*.p-col-1of4:first-of-type h6{
-	margin-top: 0;
-}*/
-
 .p-col-1of4 p{
 	margin-top: 0;
 	margin-bottom: 0;
@@ -685,10 +712,6 @@ input[type='checkbox'] {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
-/*.n-col-1of2:first-of-type label{
-	padding-right: 0.5rem;
-}*/
 
 #item {
 	width: 85%;
@@ -701,35 +724,42 @@ input[type='checkbox'] {
 	
 }
 
+.c-col-1of4 input {
+	float:left;
+	
+}
+
 .c-col-1of4 img {
 
 	width: 60%;
-	float:right;
+	float:left;
 }
 
-/*#itemwrap{
 
-	border: black double 0.2rem;
-}*/
+.row-1of2 p{
 
-#amount {
-
-	width: 85%;
-}
-
-#amount h6{
-
-	margin-top: 0;
-}
-
-#best_sell p{
 	margin: 0;
 	display: inline-block;
 	float:left;
-	font-size: 2rem;
-	color:#BFAC97;
+	font-size: 1.3rem;
+	color:gray;
+	margin-top:0.5rem;
+}
+
+
+.row-1of2:first-of-type p{
+
+	color:#DF696C;
+	font-weight: bolder;
+	font-size: 1.7rem;
+}
+
+.row-1of2:nth-of-type(2) p{
+
+	font-size: 1.5rem;
 	
 }
+
 
 .name-col1of2 {
 	float:left;
@@ -741,14 +771,12 @@ input[type='checkbox'] {
 
 
 .name-col1of2:first-of-type {
-	padding-right: 1%;
+	padding-right: 2%;
 }
 
 .name-col1of2:nth-of-type(2){
-	padding-left: 1%;
+	padding-left: 2%;
 }
-
-
 
 
 .select {
@@ -774,7 +802,7 @@ input[type='checkbox'] {
 	border-radius: 0.2rem;
 }
 
-.card #card_label{
+.card .card_label{
 	padding-top: 0.5rem;
 }
 
@@ -782,13 +810,6 @@ input[type='checkbox'] {
 	padding-top: 0.3rem;
 }
 
-
-/*.card #card_label {
-
-	padding-top: 0.5rem;
-}*/
-
-/* home page*/
 
 .events li {
 	
@@ -817,9 +838,5 @@ input[type='checkbox'] {
 #footer p{
 	font-size: 0.8rem;
 }
-
-
-	
-
 
 /*-------------  END OF FOOTER ------------- */
