@@ -438,21 +438,21 @@ input[type=submit]:hover{
 
 }
 
-.make_payment  input[type=submit]:hover{
+.make_payment input[type=submit]:hover{
 	background-color: rgba(171,152,131,1);
 }
 
-.make_payment .bill  input {
+.make_payment .bill input {
 	width: 100%;
 	text-align: right;
 }
 
-.make_payment .bill  tr {
+/*.make_payment .bill tr {
 	width: 100%;
-	/*text-align: right;*/
+	text-align: right;
 }
 
-
+*/
 
 
 #cart_wrapper{
@@ -728,10 +728,11 @@ input[type='checkbox'] {
 .name-col1of2 {
 	float:left;
 	width: 50%;
-
+	padding-top: 0.5rem;
 	margin-bottom: 0.5rem;
-
 }
+
+
 
 .name-col1of2:first-of-type {
 	padding-right: 1%;
@@ -746,17 +747,24 @@ input[type='checkbox'] {
 
 .select {
 
-	width: 45%;
+	width: 49%;
 	float:left;
 }
+
+.select:first-of-type{
+
+	margin-right: 1%;
+
+}
+
 .select:last-of-type{
 
-	margin-left: 5%;
+	margin-left: 1%;
 
 }
 
 .select {
-	height: 30px;
+	height: 31px;
 	border-radius: 0.2rem;
 }
 
@@ -767,10 +775,7 @@ input[type='checkbox'] {
 .type {
 	padding-top: 0.3rem;
 }
-.name-col1of2 {
 
-	padding-top: 0.5rem;
-}
 
 /*.card #card_label {
 
